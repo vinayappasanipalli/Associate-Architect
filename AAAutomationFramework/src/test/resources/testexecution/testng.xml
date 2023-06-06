@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="webautomationtestsuite">
+
+	<test thread-count="5" name="webautomationtestcases">
+	<listeners>
+	<listener class-name="utilities.ExtentReport_Listeners"/>
+	</listeners>
+
+		<classes>`
+
+			<class name="testcases.create_w3schoolprofile" />
+			<class name="testcases.update_w3schoolprofile" />
+			<class name="testcases.delete_w3schoolprofile" />
+			
+
+		</classes>
+
+
+	</test> <!--Test-->
+
+</suite> <!--Suite-->
