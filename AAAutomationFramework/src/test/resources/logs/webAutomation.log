@@ -193,3 +193,15 @@
 2023-06-02 02:06:482INFO  WebAutomation:19 -************Testcase DeleteProfile is Started**************
 2023-06-02 02:06:989INFO  WebAutomation:53 -Webelement is clicked
 2023-06-02 02:06:408INFO  WebAutomation:53 -Webelement is clicked
+2023-06-07 10:06:908INFO  WebAutomation:16 -************Testcase DeleteProfile is Started**************
+2023-06-07 10:06:337INFO  WebAutomation:53 -Webelement is clicked
+2023-06-07 10:06:830INFO  WebAutomation:53 -Webelement is clicked
+2023-06-07 10:06:123INFO  WebAutomation:19 -UserLogged in Successfully
+2023-06-07 10:06:559INFO  WebAutomation:77 -Weblinktext is clicked
+2023-06-07 10:06:638INFO  WebAutomation:53 -Webelement is clicked
+2023-06-07 10:06:251INFO  WebAutomation:53 -Webelement is clicked
+2023-06-07 10:06:690INFO  WebAutomation:18 -UserLogged in Successfully
+2023-06-07 10:06:808INFO  WebAutomation:77 -Weblinktext is clicked
+2023-06-07 10:06:938INFO  WebAutomation:19 -************Testcase DeleteProfile is Started**************
+2023-06-07 10:06:210INFO  WebAutomation:53 -Webelement is clicked
+2023-06-07 10:06:805INFO  WebAutomation:53 -Webelement is clicked

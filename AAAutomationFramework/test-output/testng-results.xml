@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-02T02:54:51 IST" name="webautomationtestsuite" finished-at="2023-06-02T02:58:28 IST" duration-ms="216581">
+  <suite started-at="2023-06-07T10:02:45 IST" name="webautomationtestsuite" finished-at="2023-06-07T10:04:50 IST" duration-ms="124645">
     <groups>
     </groups>
-    <test started-at="2023-06-02T02:54:51 IST" name="webautomationtestcases" finished-at="2023-06-02T02:58:28 IST" duration-ms="216581">
+    <test started-at="2023-06-07T10:02:45 IST" name="webautomationtestcases" finished-at="2023-06-07T10:04:50 IST" duration-ms="124645">
       <class name="testcases.create_w3schoolprofile">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.create_w3schoolprofile@5b03b9fe]" started-at="2023-06-02T02:54:54 IST" name="setup" finished-at="2023-06-02T02:55:49 IST" duration-ms="55814" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.create_w3schoolprofile@5b03b9fe]" started-at="2023-06-07T10:02:47 IST" name="setup" finished-at="2023-06-07T10:03:11 IST" duration-ms="24285" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="createprofile(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.create_w3schoolprofile@5b03b9fe]" started-at="2023-06-02T02:55:49 IST" name="createprofile" data-provider="bvttestdata" finished-at="2023-06-02T02:56:35 IST" duration-ms="45594" status="FAIL">
+        <test-method signature="createprofile(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.create_w3schoolprofile@5b03b9fe]" started-at="2023-06-07T10:03:11 IST" name="createprofile" data-provider="bvttestdata" finished-at="2023-06-07T10:03:36 IST" duration-ms="24691" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -70,9 +70,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.8.3', revision: 'e5e76298c3'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [e0083b00-e760-4214-8069-c1dc778cfe81, findElement {using=xpath, value=//input[@placeholder='@"nickname"']}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.2, moz:accessibilityChecks: false, moz:buildID: 20230522134052, moz:debuggerAddress: 127.0.0.1:35670, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 15600, moz:profile: C:\Users\BSA\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:35670/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: e0083b00-e760-4214-8069-c1dc778cfe81
+Command: [087aeeda-76ee-4db6-8aaf-8dd2ebaf3fe3, findElement {using=xpath, value=//input[@placeholder='@"nickname"']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.2, moz:accessibilityChecks: false, moz:buildID: 20230522134052, moz:debuggerAddress: 127.0.0.1:17790, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13824, moz:profile: C:\Users\BSA\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:17790/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 087aeeda-76ee-4db6-8aaf-8dd2ebaf3fe3
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -98,17 +98,17 @@ at testcases.create_w3schoolprofile.createprofile(create_w3schoolprofile.java:23
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createprofile -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.create_w3schoolprofile@5b03b9fe]" started-at="2023-06-02T02:56:37 IST" name="teardown" finished-at="2023-06-02T02:56:47 IST" duration-ms="10187" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.create_w3schoolprofile@5b03b9fe]" started-at="2023-06-07T10:03:37 IST" name="teardown" finished-at="2023-06-07T10:03:41 IST" duration-ms="4494" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- testcases.create_w3schoolprofile -->
       <class name="testcases.update_w3schoolprofile">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.update_w3schoolprofile@771a660]" started-at="2023-06-02T02:56:47 IST" name="setup" finished-at="2023-06-02T02:57:14 IST" duration-ms="27313" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.update_w3schoolprofile@771a660]" started-at="2023-06-07T10:03:41 IST" name="setup" finished-at="2023-06-07T10:03:56 IST" duration-ms="15072" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="updateprofile(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.update_w3schoolprofile@771a660]" started-at="2023-06-02T02:57:14 IST" name="updateprofile" data-provider="bvttestdata" finished-at="2023-06-02T02:57:41 IST" duration-ms="26268" status="PASS">
+        <test-method signature="updateprofile(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.update_w3schoolprofile@771a660]" started-at="2023-06-07T10:03:56 IST" name="updateprofile" data-provider="bvttestdata" finished-at="2023-06-07T10:04:20 IST" duration-ms="24068" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -129,17 +129,17 @@ at testcases.create_w3schoolprofile.createprofile(create_w3schoolprofile.java:23
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateprofile -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.update_w3schoolprofile@771a660]" started-at="2023-06-02T02:57:41 IST" name="teardown" finished-at="2023-06-02T02:57:47 IST" duration-ms="6303" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.update_w3schoolprofile@771a660]" started-at="2023-06-07T10:04:20 IST" name="teardown" finished-at="2023-06-07T10:04:24 IST" duration-ms="3228" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- testcases.update_w3schoolprofile -->
       <class name="testcases.delete_w3schoolprofile">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.delete_w3schoolprofile@242b836]" started-at="2023-06-02T02:57:47 IST" name="setup" finished-at="2023-06-02T02:58:13 IST" duration-ms="26069" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.delete_w3schoolprofile@242b836]" started-at="2023-06-07T10:04:24 IST" name="setup" finished-at="2023-06-07T10:04:34 IST" duration-ms="10767" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="deleteprofile(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.delete_w3schoolprofile@242b836]" started-at="2023-06-02T02:58:13 IST" name="deleteprofile" data-provider="bvttestdata" finished-at="2023-06-02T02:58:20 IST" duration-ms="6940" status="FAIL">
+        <test-method signature="deleteprofile(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.delete_w3schoolprofile@242b836]" started-at="2023-06-07T10:04:34 IST" name="deleteprofile" data-provider="bvttestdata" finished-at="2023-06-07T10:04:47 IST" duration-ms="12888" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -207,7 +207,7 @@ at testcases.delete_w3schoolprofile.deleteprofile(delete_w3schoolprofile.java:23
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteprofile -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.delete_w3schoolprofile@242b836]" started-at="2023-06-02T02:58:20 IST" name="teardown" finished-at="2023-06-02T02:58:28 IST" duration-ms="8032" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.delete_w3schoolprofile@242b836]" started-at="2023-06-07T10:04:47 IST" name="teardown" finished-at="2023-06-07T10:04:50 IST" duration-ms="2274" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
