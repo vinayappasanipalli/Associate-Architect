@@ -24,10 +24,10 @@ public class create_w3schoolprofile extends BaseDriver {
 			Thread.sleep(6000);
 			CommonFunctions.cf_webelementclick((objrepo.getProperty("profile_save_button")));
 			Thread.sleep(6000);
-			String actualrecordsave = "My Profile";
-			String expectedrecordsave="My Profile";
-			Assert.assertEquals(actualrecordsave,expectedrecordsave,"Record is not Saved");
-			logger.info("************Testcase DeleteProfile is Completed **************");
+			//String actualrecordsave = "My Profile";
+			//String expectedrecordsave="My Profile";
+			//Assert.assertEquals(actualrecordsave,expectedrecordsave,"Record is not Saved");
+			logger.info("************Testcase CreateProfile is Completed **************");
 			} catch (Throwable e) {
 				Assert.fail("Create Profile Testcase is Failed", e);
 				logger.error("Testcase Failed with the error:", e);	

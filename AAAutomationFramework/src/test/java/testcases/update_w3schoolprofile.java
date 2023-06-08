@@ -22,9 +22,9 @@ public class update_w3schoolprofile extends BaseDriver {
 			CommonFunctions.cf_webelementsendkeys((objrepo.getProperty("profile_url")), url);
 			Thread.sleep(6000);
 			CommonFunctions.cf_webelementclick((objrepo.getProperty("profile_save_button")));
-			String actualrecordsave = "Successfully saved public profile";
-			String expectedrecordsave="Successfully saved public profile";
-			Assert.assertEquals(actualrecordsave,expectedrecordsave);
+			//String actualrecordsave = "Successfully saved public profile";
+			//String expectedrecordsave="Successfully saved public profile";
+			//Assert.assertEquals(actualrecordsave,expectedrecordsave);
 			Thread.sleep(6000);
 			} catch (Throwable e) {
 			// TODO Auto-generated catch block
