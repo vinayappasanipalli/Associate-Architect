@@ -9,21 +9,49 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">webautomationtestsuite</th></tr>
-<tr><td><a href="#t0">webautomationtestcases</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">124,645</td><td></td><td></td></tr>
+<tr><td><a href="#t0">webautomationtestcases</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">6</td><td class="num attn">2</td><td class="num">944,835</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">webautomationtestsuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">webautomationtestcases &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testcases.create_w3schoolprofile</td><td><a href="#m0">createprofile</a></td><td rowspan="1">1686112391897</td><td rowspan="1">24691</td></tr><tr class="failedodd"><td rowspan="1">testcases.delete_w3schoolprofile</td><td><a href="#m1">deleteprofile</a></td><td rowspan="1">1686112474936</td><td rowspan="1">12888</td></tr><tr><th colspan="4">webautomationtestcases &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testcases.update_w3schoolprofile</td><td><a href="#m2">updateprofile</a></td><td rowspan="1">1686112436776</td><td rowspan="1">24068</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">webautomationtestsuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">webautomationtestcases &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">testcases.delete_w3schoolprofile</td><td><a href="#m0">setup</a></td><td rowspan="1">1686803257681</td><td rowspan="1">207309</td></tr><tr><th colspan="4">webautomationtestcases &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testcases.create_w3schoolprofile</td><td><a href="#m1">createprofile</a></td><td rowspan="1">1686802966472</td><td rowspan="1">31212</td></tr><tr class="failedodd"><td rowspan="1">testcases.delete_w3schoolprofile</td><td><a href="#m2">deleteprofile</a></td><td rowspan="1">1686803515201</td><td rowspan="1">4352</td></tr><tr><th colspan="4">webautomationtestcases &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="5">testcases.delete_w3schoolprofile</td><td><a href="#m3">setup</a></td><td rowspan="2">1686803515201</td><td rowspan="2">-1686803515201</td></tr><tr class="skippedeven"><td><a href="#m4">setup</a></td></tr><tr class="skippedeven"><td><a href="#m5">teardown</a></td><td rowspan="3">1686803510787</td><td rowspan="3">-1686803510787</td></tr><tr class="skippedeven"><td><a href="#m6">teardown</a></td></tr><tr class="skippedeven"><td><a href="#m7">teardown</a></td></tr><tr><th colspan="4">webautomationtestcases &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="3">testcases.create_w3schoolprofile</td><td><a href="#m8">createprofile</a></td><td rowspan="3">1686802753232</td><td rowspan="3">34716</td></tr><tr class="retriedeven"><td><a href="#m9">createprofile</a></td></tr><tr class="retriedeven"><td><a href="#m10">createprofile</a></td></tr><tr class="retriedodd"><td rowspan="3">testcases.delete_w3schoolprofile</td><td><a href="#m11">deleteprofile</a></td><td rowspan="3">1686803242943</td><td rowspan="3">8140</td></tr><tr class="retriedodd"><td><a href="#m12">deleteprofile</a></td></tr><tr class="retriedodd"><td><a href="#m13">deleteprofile</a></td></tr><tr><th colspan="4">webautomationtestcases &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testcases.update_w3schoolprofile</td><td><a href="#m14">updateprofile</a></td><td rowspan="1">1686803138315</td><td rowspan="1">23561</td></tr></tbody>
 </table>
-<h2>webautomationtestcases</h2><h3 id="m0">testcases.create_w3schoolprofile#createprofile</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>vinayquiet@gmail.com</td><td>Bunny@123</td><td>vinay</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">java.lang.AssertionError: Create Profile Testcase is Failed
+<h2>webautomationtestcases</h2><h3 id="m0">testcases.delete_w3schoolprofile#setup</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [edda356b-0feb-49bc-886c-fa7adfb1f983, get {url=https://w3schools.com/}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 114.0.1, moz:accessibilityChecks: false, moz:buildID: 20230608214645, moz:debuggerAddress: 127.0.0.1:34969, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8384, moz:profile: C:\Users\BSA\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:34969/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: edda356b-0feb-49bc-886c-fa7adfb1f983
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:65)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:99)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
+	at base.BaseDriver.setup(BaseDriver.java:47)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1886)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2021)
+	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
+	... 44 more
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testcases.create_w3schoolprofile#createprofile</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>vinayquiet@gmail.com</td><td>Bunny@123</td><td>vinay</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">java.lang.AssertionError: Create Profile Testcase is Failed
 	at testcases.create_w3schoolprofile.createprofile(create_w3schoolprofile.java:32)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //input[@placeholder=&apos;@&quot;nickname&quot;&apos;]
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.18&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [087aeeda-76ee-4db6-8aaf-8dd2ebaf3fe3, findElement {using=xpath, value=//input[@placeholder=&apos;@&quot;nickname&quot;&apos;]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.2, moz:accessibilityChecks: false, moz:buildID: 20230522134052, moz:debuggerAddress: 127.0.0.1:17790, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13824, moz:profile: C:\Users\BSA\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:17790/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 087aeeda-76ee-4db6-8aaf-8dd2ebaf3fe3
+Command: [0b256252-b6b8-4404-a5b8-e25eb2a56156, findElement {using=xpath, value=//input[@placeholder=&apos;@&quot;nickname&quot;&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 114.0.1, moz:accessibilityChecks: false, moz:buildID: 20230608214645, moz:debuggerAddress: 127.0.0.1:22076, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 9880, moz:profile: C:\Users\BSA\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:22076/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0b256252-b6b8-4404-a5b8-e25eb2a56156
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -38,14 +66,118 @@ Session ID: 087aeeda-76ee-4db6-8aaf-8dd2ebaf3fe3
 	at utilities.CommonFunctions.cf_webelementsendkeys(CommonFunctions.java:63)
 	at testcases.create_w3schoolprofile.createprofile(create_w3schoolprofile.java:23)
 	... 28 more
-... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testcases.delete_w3schoolprofile#deleteprofile</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>vinayquiet@gmail.com</td><td>Bunny@123456</td><td>vinay</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">java.lang.AssertionError: Delete Profile Testcase is Failed
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testcases.delete_w3schoolprofile#deleteprofile</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>vinayquiet@gmail.com</td><td>Bunny@123456</td><td>vinay</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">java.lang.AssertionError: Delete Profile Testcase is Failed
 	at testcases.delete_w3schoolprofile.deleteprofile(delete_w3schoolprofile.java:38)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 Caused by: java.lang.AssertionError: User Logged in Failed. expected [My learning | W3Schools] but found [Log in - W3Schools]
 	at testcases.delete_w3schoolprofile.deleteprofile(delete_w3schoolprofile.java:23)
 	... 28 more
 ... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">testcases.update_w3schoolprofile#updateprofile</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>vinayquiet@gmail.com</td><td>Bunny@123</td><td>vinay</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testcases.delete_w3schoolprofile#setup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testcases.delete_w3schoolprofile#setup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">testcases.delete_w3schoolprofile#teardown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">testcases.delete_w3schoolprofile#teardown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">testcases.delete_w3schoolprofile#teardown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">testcases.create_w3schoolprofile#createprofile</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>vinayquiet@gmail.com</td><td>Bunny@123</td><td>vinay</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">java.lang.AssertionError: Create Profile Testcase is Failed
+	at testcases.create_w3schoolprofile.createprofile(create_w3schoolprofile.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //input[@placeholder=&apos;@&quot;nickname&quot;&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [3a29c860-7ddd-427c-ae4f-36341d7c8f7e, findElement {using=xpath, value=//input[@placeholder=&apos;@&quot;nickname&quot;&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 114.0.1, moz:accessibilityChecks: false, moz:buildID: 20230608214645, moz:debuggerAddress: 127.0.0.1:21997, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 6488, moz:profile: C:\Users\BSA\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:21997/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3a29c860-7ddd-427c-ae4f-36341d7c8f7e
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at utilities.CommonFunctions.cf_webelementsendkeys(CommonFunctions.java:63)
+	at testcases.create_w3schoolprofile.createprofile(create_w3schoolprofile.java:23)
+	... 28 more
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">testcases.create_w3schoolprofile#createprofile</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>vinayquiet@gmail.com</td><td>Bunny@123</td><td>vinay</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">java.lang.AssertionError: Create Profile Testcase is Failed
+	at testcases.create_w3schoolprofile.createprofile(create_w3schoolprofile.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //input[@placeholder=&apos;@&quot;nickname&quot;&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [2b4e3514-be21-40ea-8819-18ec70a95bf4, findElement {using=xpath, value=//input[@placeholder=&apos;@&quot;nickname&quot;&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 114.0.1, moz:accessibilityChecks: false, moz:buildID: 20230608214645, moz:debuggerAddress: 127.0.0.1:33050, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 10976, moz:profile: C:\Users\BSA\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:33050/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2b4e3514-be21-40ea-8819-18ec70a95bf4
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at utilities.CommonFunctions.cf_webelementsendkeys(CommonFunctions.java:63)
+	at testcases.create_w3schoolprofile.createprofile(create_w3schoolprofile.java:23)
+	... 28 more
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">testcases.create_w3schoolprofile#createprofile</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>vinayquiet@gmail.com</td><td>Bunny@123</td><td>vinay</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">java.lang.AssertionError: Create Profile Testcase is Failed
+	at testcases.create_w3schoolprofile.createprofile(create_w3schoolprofile.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //input[@placeholder=&apos;@&quot;nickname&quot;&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [05b377a7-c39d-4204-9388-576ca1b8fbe1, findElement {using=xpath, value=//input[@placeholder=&apos;@&quot;nickname&quot;&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 114.0.1, moz:accessibilityChecks: false, moz:buildID: 20230608214645, moz:debuggerAddress: 127.0.0.1:1903, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 2852, moz:profile: C:\Users\BSA\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:1903/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 05b377a7-c39d-4204-9388-576ca1b8fbe1
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at utilities.CommonFunctions.cf_webelementsendkeys(CommonFunctions.java:63)
+	at testcases.create_w3schoolprofile.createprofile(create_w3schoolprofile.java:23)
+	... 28 more
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">testcases.delete_w3schoolprofile#deleteprofile</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>vinayquiet@gmail.com</td><td>Bunny@123456</td><td>vinay</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">java.lang.AssertionError: Delete Profile Testcase is Failed
+	at testcases.delete_w3schoolprofile.deleteprofile(delete_w3schoolprofile.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+Caused by: java.lang.AssertionError: User Logged in Failed. expected [My learning | W3Schools] but found [Log in - W3Schools]
+	at testcases.delete_w3schoolprofile.deleteprofile(delete_w3schoolprofile.java:23)
+	... 28 more
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">testcases.delete_w3schoolprofile#deleteprofile</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>vinayquiet@gmail.com</td><td>Bunny@123456</td><td>vinay</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">java.lang.AssertionError: Delete Profile Testcase is Failed
+	at testcases.delete_w3schoolprofile.deleteprofile(delete_w3schoolprofile.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+Caused by: java.lang.AssertionError: User Logged in Failed. expected [My learning | W3Schools] but found [Log in - W3Schools]
+	at testcases.delete_w3schoolprofile.deleteprofile(delete_w3schoolprofile.java:23)
+	... 28 more
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">testcases.delete_w3schoolprofile#deleteprofile</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>vinayquiet@gmail.com</td><td>Bunny@123456</td><td>vinay</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">java.lang.AssertionError: Delete Profile Testcase is Failed
+	at testcases.delete_w3schoolprofile.deleteprofile(delete_w3schoolprofile.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+Caused by: java.lang.AssertionError: User Logged in Failed. expected [My learning | W3Schools] but found [Log in - W3Schools]
+	at testcases.delete_w3schoolprofile.deleteprofile(delete_w3schoolprofile.java:23)
+	... 28 more
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">testcases.update_w3schoolprofile#updateprofile</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>vinayquiet@gmail.com</td><td>Bunny@123</td><td>vinay</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

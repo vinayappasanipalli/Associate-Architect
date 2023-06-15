@@ -299,3 +299,91 @@
 2023-06-09 02:06:199INFO  WebAutomation:19 -************Testcase DeleteProfile is Started**************
 2023-06-09 02:06:360INFO  WebAutomation:53 -Webelement is clicked
 2023-06-09 02:06:968INFO  WebAutomation:53 -Webelement is clicked
+2023-06-09 03:06:647INFO  WebAutomation:16 -************Testcase DeleteProfile is Started**************
+2023-06-09 03:06:155INFO  WebAutomation:53 -Webelement is clicked
+2023-06-09 03:06:604INFO  WebAutomation:53 -Webelement is clicked
+2023-06-09 03:06:49INFO  WebAutomation:19 -UserLogged in Successfully
+2023-06-09 03:06:927INFO  WebAutomation:77 -Weblinktext is clicked
+2023-06-09 03:06:38INFO  WebAutomation:53 -Webelement is clicked
+2023-06-09 03:06:397INFO  WebAutomation:53 -Webelement is clicked
+2023-06-09 03:06:514INFO  WebAutomation:18 -UserLogged in Successfully
+2023-06-09 03:06:748INFO  WebAutomation:77 -Weblinktext is clicked
+2023-06-09 03:06:577INFO  WebAutomation:19 -************Testcase DeleteProfile is Started**************
+2023-06-09 03:06:864INFO  WebAutomation:53 -Webelement is clicked
+2023-06-09 03:06:58INFO  WebAutomation:53 -Webelement is clicked
+2023-06-09 21:06:496INFO  WebAutomation:16 -************Testcase DeleteProfile is Started**************
+2023-06-09 21:06:135INFO  WebAutomation:53 -Webelement is clicked
+2023-06-09 21:06:477INFO  WebAutomation:53 -Webelement is clicked
+2023-06-09 21:06:652INFO  WebAutomation:19 -UserLogged in Successfully
+2023-06-09 21:06:433INFO  WebAutomation:77 -Weblinktext is clicked
+2023-06-09 21:06:630INFO  WebAutomation:19 -************Testcase DeleteProfile is Started**************
+2023-06-09 21:06:114INFO  WebAutomation:53 -Webelement is clicked
+2023-06-09 21:06:338INFO  WebAutomation:53 -Webelement is clicked
+2023-06-10 01:06:604INFO  WebAutomation:16 -************Testcase DeleteProfile is Started**************
+2023-06-10 01:06:795INFO  WebAutomation:53 -Webelement is clicked
+2023-06-10 01:06:420INFO  WebAutomation:53 -Webelement is clicked
+2023-06-10 01:06:840INFO  WebAutomation:19 -UserLogged in Successfully
+2023-06-10 01:06:618INFO  WebAutomation:77 -Weblinktext is clicked
+2023-06-10 01:06:210INFO  WebAutomation:53 -Webelement is clicked
+2023-06-10 01:06:798INFO  WebAutomation:53 -Webelement is clicked
+2023-06-10 01:06:46INFO  WebAutomation:18 -UserLogged in Successfully
+2023-06-10 01:06:895INFO  WebAutomation:77 -Weblinktext is clicked
+2023-06-10 01:06:988INFO  WebAutomation:19 -************Testcase DeleteProfile is Started**************
+2023-06-10 01:06:419INFO  WebAutomation:53 -Webelement is clicked
+2023-06-10 01:06:107INFO  WebAutomation:53 -Webelement is clicked
+2023-06-15 08:06:333INFO  WebAutomation:53 -Webelement is clicked
+2023-06-15 08:06:894INFO  WebAutomation:53 -Webelement is clicked
+2023-06-15 08:06:995INFO  WebAutomation:18 -UserLogged in Successfully
+2023-06-15 08:06:398INFO  WebAutomation:77 -Weblinktext is clicked
+2023-06-15 08:06:293INFO  WebAutomation:19 -************Testcase DeleteProfile is Started**************
+2023-06-15 08:06:631INFO  WebAutomation:53 -Webelement is clicked
+2023-06-15 08:06:303INFO  WebAutomation:53 -Webelement is clicked
+2023-06-15 08:06:296INFO  WebAutomation:16 -************Testcase DeleteProfile is Started**************
+2023-06-15 08:06:850INFO  WebAutomation:53 -Webelement is clicked
+2023-06-15 08:06:445INFO  WebAutomation:53 -Webelement is clicked
+2023-06-15 08:06:553INFO  WebAutomation:19 -UserLogged in Successfully
+2023-06-15 08:06:410INFO  WebAutomation:77 -Weblinktext is clicked
+2023-06-15 08:06:593INFO  WebAutomation:53 -Webelement is clicked
+2023-06-15 08:06:300INFO  WebAutomation:53 -Webelement is clicked
+2023-06-15 08:06:370INFO  WebAutomation:18 -UserLogged in Successfully
+2023-06-15 08:06:108INFO  WebAutomation:77 -Weblinktext is clicked
+2023-06-15 08:06:558INFO  WebAutomation:19 -************Testcase DeleteProfile is Started**************
+2023-06-15 08:06:766INFO  WebAutomation:53 -Webelement is clicked
+2023-06-15 08:06:155INFO  WebAutomation:53 -Webelement is clicked
+2023-06-15 09:06:560INFO  WebAutomation:53 -Webelement is clicked
+2023-06-15 09:06:93INFO  WebAutomation:16 -************Testcase DeleteProfile is Started**************
+2023-06-15 09:06:378INFO  WebAutomation:53 -Webelement is clicked
+2023-06-15 09:06:225INFO  WebAutomation:53 -Webelement is clicked
+2023-06-15 09:06:652INFO  WebAutomation:19 -UserLogged in Successfully
+2023-06-15 09:06:427INFO  WebAutomation:77 -Weblinktext is clicked
+2023-06-15 09:06:364INFO  WebAutomation:16 -************Testcase DeleteProfile is Started**************
+2023-06-15 09:06:177INFO  WebAutomation:53 -Webelement is clicked
+2023-06-15 09:06:826INFO  WebAutomation:53 -Webelement is clicked
+2023-06-15 09:06:825INFO  WebAutomation:19 -UserLogged in Successfully
+2023-06-15 09:06:387INFO  WebAutomation:77 -Weblinktext is clicked
+2023-06-15 09:06:233INFO  WebAutomation:16 -************Testcase DeleteProfile is Started**************
+2023-06-15 09:06:35INFO  WebAutomation:53 -Webelement is clicked
+2023-06-15 09:06:705INFO  WebAutomation:53 -Webelement is clicked
+2023-06-15 09:06:750INFO  WebAutomation:19 -UserLogged in Successfully
+2023-06-15 09:06:919INFO  WebAutomation:77 -Weblinktext is clicked
+2023-06-15 09:06:472INFO  WebAutomation:16 -************Testcase DeleteProfile is Started**************
+2023-06-15 09:06:751INFO  WebAutomation:53 -Webelement is clicked
+2023-06-15 09:06:955INFO  WebAutomation:53 -Webelement is clicked
+2023-06-15 09:06:813INFO  WebAutomation:19 -UserLogged in Successfully
+2023-06-15 09:06:674INFO  WebAutomation:77 -Weblinktext is clicked
+2023-06-15 09:06:590INFO  WebAutomation:53 -Webelement is clicked
+2023-06-15 09:06:215INFO  WebAutomation:53 -Webelement is clicked
+2023-06-15 09:06:783INFO  WebAutomation:18 -UserLogged in Successfully
+2023-06-15 09:06:834INFO  WebAutomation:77 -Weblinktext is clicked
+2023-06-15 09:06:946INFO  WebAutomation:19 -************Testcase DeleteProfile is Started**************
+2023-06-15 09:06:421INFO  WebAutomation:53 -Webelement is clicked
+2023-06-15 09:06:43INFO  WebAutomation:53 -Webelement is clicked
+2023-06-15 10:06:990INFO  WebAutomation:19 -************Testcase DeleteProfile is Started**************
+2023-06-15 10:06:826INFO  WebAutomation:53 -Webelement is clicked
+2023-06-15 10:06:768INFO  WebAutomation:53 -Webelement is clicked
+2023-06-15 10:06:831INFO  WebAutomation:19 -************Testcase DeleteProfile is Started**************
+2023-06-15 10:06:839INFO  WebAutomation:56 -Webelement is not clicked
+2023-06-15 10:06:166INFO  WebAutomation:53 -Webelement is clicked
+2023-06-15 10:06:201INFO  WebAutomation:19 -************Testcase DeleteProfile is Started**************
+2023-06-15 10:06:209INFO  WebAutomation:56 -Webelement is not clicked
+2023-06-15 10:06:553INFO  WebAutomation:53 -Webelement is clicked

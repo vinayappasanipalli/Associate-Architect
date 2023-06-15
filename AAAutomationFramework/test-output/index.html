@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
+                    <span class="method-stats">9 methods, 2 failed,  6 skipped,  1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -113,6 +113,45 @@
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-webautomationtestsuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-webautomationtestsuite" class="hide-methods skipped suite-webautomationtestsuite"> (hide)</a> <!-- hide-methods skipped suite-webautomationtestsuite -->
+                      <a href="#" panel-name="suite-webautomationtestsuite" class="show-methods skipped suite-webautomationtestsuite"> (show)</a> <!-- show-methods skipped suite-webautomationtestsuite -->
+                    </span>
+                    <div class="method-list-content skipped suite-webautomationtestsuite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-webautomationtestsuite" title="testcases.create_w3schoolprofile" class="method navigator-link" hash-for-method="createprofile(vinayquiet@gmail.com, Bunny@123, vinay)">createprofile(vinayquiet@gmail.com, Bunny@123, vinay)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-webautomationtestsuite" title="testcases.create_w3schoolprofile" class="method navigator-link" hash-for-method="createprofile(vinayquiet@gmail.com, Bunny@123, vinay)">createprofile(vinayquiet@gmail.com, Bunny@123, vinay)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-webautomationtestsuite" title="testcases.create_w3schoolprofile" class="method navigator-link" hash-for-method="createprofile(vinayquiet@gmail.com, Bunny@123, vinay)">createprofile(vinayquiet@gmail.com, Bunny@123, vinay)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-webautomationtestsuite" title="testcases.delete_w3schoolprofile" class="method navigator-link" hash-for-method="deleteprofile(vinayquiet@gmail.com, Bunny@123456, vinay)">deleteprofile(vinayquiet@gmail.com, Bunny@123456, vinay)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-webautomationtestsuite" title="testcases.delete_w3schoolprofile" class="method navigator-link" hash-for-method="deleteprofile(vinayquiet@gmail.com, Bunny@123456, vinay)">deleteprofile(vinayquiet@gmail.com, Bunny@123456, vinay)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-webautomationtestsuite" title="testcases.delete_w3schoolprofile" class="method navigator-link" hash-for-method="deleteprofile(vinayquiet@gmail.com, Bunny@123456, vinay)">deleteprofile(vinayquiet@gmail.com, Bunny@123456, vinay)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-webautomationtestsuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -152,7 +191,7 @@
                   <span class="parameters">(vinayquiet@gmail.com, Bunny@123456, vinay)</span>
                   <div class="stack-trace">java.lang.AssertionError: Delete Profile Testcase is Failed
 	at testcases.delete_w3schoolprofile.deleteprofile(delete_w3schoolprofile.java:38)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 Caused by: java.lang.AssertionError: User Logged in Failed. expected [My learning | W3Schools] but found [Log in - W3Schools]
 	at testcases.delete_w3schoolprofile.deleteprofile(delete_w3schoolprofile.java:23)
 	... 28 more
@@ -176,15 +215,15 @@ Caused by: java.lang.AssertionError: User Logged in Failed. expected [My learnin
                   <span class="parameters">(vinayquiet@gmail.com, Bunny@123, vinay)</span>
                   <div class="stack-trace">java.lang.AssertionError: Create Profile Testcase is Failed
 	at testcases.create_w3schoolprofile.createprofile(create_w3schoolprofile.java:32)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //input[@placeholder=&apos;@&quot;nickname&quot;&apos;]
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.18&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [087aeeda-76ee-4db6-8aaf-8dd2ebaf3fe3, findElement {using=xpath, value=//input[@placeholder=&apos;@&quot;nickname&quot;&apos;]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.2, moz:accessibilityChecks: false, moz:buildID: 20230522134052, moz:debuggerAddress: 127.0.0.1:17790, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13824, moz:profile: C:\Users\BSA\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:17790/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 087aeeda-76ee-4db6-8aaf-8dd2ebaf3fe3
+Command: [0b256252-b6b8-4404-a5b8-e25eb2a56156, findElement {using=xpath, value=//input[@placeholder=&apos;@&quot;nickname&quot;&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 114.0.1, moz:accessibilityChecks: false, moz:buildID: 20230608214645, moz:debuggerAddress: 127.0.0.1:22076, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 9880, moz:profile: C:\Users\BSA\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:22076/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0b256252-b6b8-4404-a5b8-e25eb2a56156
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -199,12 +238,181 @@ Session ID: 087aeeda-76ee-4db6-8aaf-8dd2ebaf3fe3
 	at utilities.CommonFunctions.cf_webelementsendkeys(CommonFunctions.java:63)
 	at testcases.create_w3schoolprofile.createprofile(create_w3schoolprofile.java:23)
 	... 28 more
-... Removed 33 stack frames
+... Removed 31 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-webautomationtestsuite-class-failed -->
+          <div class="suite-webautomationtestsuite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testcases.delete_w3schoolprofile</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteprofile(vinayquiet@gmail.com, Bunny@123456, vinay)">
+                  </a> <!-- deleteprofile(vinayquiet@gmail.com, Bunny@123456, vinay) -->
+                  <span class="method-name">deleteprofile</span>
+                  <span class="parameters">(vinayquiet@gmail.com, Bunny@123456, vinay)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Delete Profile Testcase is Failed
+	at testcases.delete_w3schoolprofile.deleteprofile(delete_w3schoolprofile.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+Caused by: java.lang.AssertionError: User Logged in Failed. expected [My learning | W3Schools] but found [Log in - W3Schools]
+	at testcases.delete_w3schoolprofile.deleteprofile(delete_w3schoolprofile.java:23)
+	... 28 more
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteprofile(vinayquiet@gmail.com, Bunny@123456, vinay)">
+                  </a> <!-- deleteprofile(vinayquiet@gmail.com, Bunny@123456, vinay) -->
+                  <span class="method-name">deleteprofile</span>
+                  <span class="parameters">(vinayquiet@gmail.com, Bunny@123456, vinay)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Delete Profile Testcase is Failed
+	at testcases.delete_w3schoolprofile.deleteprofile(delete_w3schoolprofile.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+Caused by: java.lang.AssertionError: User Logged in Failed. expected [My learning | W3Schools] but found [Log in - W3Schools]
+	at testcases.delete_w3schoolprofile.deleteprofile(delete_w3schoolprofile.java:23)
+	... 28 more
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteprofile(vinayquiet@gmail.com, Bunny@123456, vinay)">
+                  </a> <!-- deleteprofile(vinayquiet@gmail.com, Bunny@123456, vinay) -->
+                  <span class="method-name">deleteprofile</span>
+                  <span class="parameters">(vinayquiet@gmail.com, Bunny@123456, vinay)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Delete Profile Testcase is Failed
+	at testcases.delete_w3schoolprofile.deleteprofile(delete_w3schoolprofile.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+Caused by: java.lang.AssertionError: User Logged in Failed. expected [My learning | W3Schools] but found [Log in - W3Schools]
+	at testcases.delete_w3schoolprofile.deleteprofile(delete_w3schoolprofile.java:23)
+	... 28 more
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-webautomationtestsuite-class-skipped -->
+          <div class="suite-webautomationtestsuite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testcases.create_w3schoolprofile</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createprofile(vinayquiet@gmail.com, Bunny@123, vinay)">
+                  </a> <!-- createprofile(vinayquiet@gmail.com, Bunny@123, vinay) -->
+                  <span class="method-name">createprofile</span>
+                  <span class="parameters">(vinayquiet@gmail.com, Bunny@123, vinay)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Create Profile Testcase is Failed
+	at testcases.create_w3schoolprofile.createprofile(create_w3schoolprofile.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //input[@placeholder=&apos;@&quot;nickname&quot;&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [3a29c860-7ddd-427c-ae4f-36341d7c8f7e, findElement {using=xpath, value=//input[@placeholder=&apos;@&quot;nickname&quot;&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 114.0.1, moz:accessibilityChecks: false, moz:buildID: 20230608214645, moz:debuggerAddress: 127.0.0.1:21997, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 6488, moz:profile: C:\Users\BSA\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:21997/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3a29c860-7ddd-427c-ae4f-36341d7c8f7e
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at utilities.CommonFunctions.cf_webelementsendkeys(CommonFunctions.java:63)
+	at testcases.create_w3schoolprofile.createprofile(create_w3schoolprofile.java:23)
+	... 28 more
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createprofile(vinayquiet@gmail.com, Bunny@123, vinay)">
+                  </a> <!-- createprofile(vinayquiet@gmail.com, Bunny@123, vinay) -->
+                  <span class="method-name">createprofile</span>
+                  <span class="parameters">(vinayquiet@gmail.com, Bunny@123, vinay)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Create Profile Testcase is Failed
+	at testcases.create_w3schoolprofile.createprofile(create_w3schoolprofile.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //input[@placeholder=&apos;@&quot;nickname&quot;&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [2b4e3514-be21-40ea-8819-18ec70a95bf4, findElement {using=xpath, value=//input[@placeholder=&apos;@&quot;nickname&quot;&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 114.0.1, moz:accessibilityChecks: false, moz:buildID: 20230608214645, moz:debuggerAddress: 127.0.0.1:33050, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 10976, moz:profile: C:\Users\BSA\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:33050/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2b4e3514-be21-40ea-8819-18ec70a95bf4
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at utilities.CommonFunctions.cf_webelementsendkeys(CommonFunctions.java:63)
+	at testcases.create_w3schoolprofile.createprofile(create_w3schoolprofile.java:23)
+	... 28 more
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createprofile(vinayquiet@gmail.com, Bunny@123, vinay)">
+                  </a> <!-- createprofile(vinayquiet@gmail.com, Bunny@123, vinay) -->
+                  <span class="method-name">createprofile</span>
+                  <span class="parameters">(vinayquiet@gmail.com, Bunny@123, vinay)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Create Profile Testcase is Failed
+	at testcases.create_w3schoolprofile.createprofile(create_w3schoolprofile.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //input[@placeholder=&apos;@&quot;nickname&quot;&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [05b377a7-c39d-4204-9388-576ca1b8fbe1, findElement {using=xpath, value=//input[@placeholder=&apos;@&quot;nickname&quot;&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 114.0.1, moz:accessibilityChecks: false, moz:buildID: 20230608214645, moz:debuggerAddress: 127.0.0.1:1903, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 2852, moz:profile: C:\Users\BSA\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:1903/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 05b377a7-c39d-4204-9388-576ca1b8fbe1
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at utilities.CommonFunctions.cf_webelementsendkeys(CommonFunctions.java:63)
+	at testcases.create_w3schoolprofile.createprofile(create_w3schoolprofile.java:23)
+	... 28 more
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-webautomationtestsuite-class-skipped -->
           <div class="suite-webautomationtestsuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -233,6 +441,7 @@ Session ID: 087aeeda-76ee-4db6-8aaf-8dd2ebaf3fe3
 &lt;suite name=&quot;webautomationtestsuite&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;utilities.ExtentReport_Listeners&quot;/&gt;
+    &lt;listener class-name=&quot;utilities.RetryListener&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;webautomationtestcases&quot;&gt;
     &lt;classes&gt;
@@ -278,24 +487,48 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(9);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'createprofile')
 data.setCell(0, 2, 'testcases.create_w3schoolprofile')
-data.setCell(0, 3, 24691);
+data.setCell(0, 3, 50457);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'updateprofile')
-data.setCell(1, 2, 'testcases.update_w3schoolprofile')
-data.setCell(1, 3, 24068);
+data.setCell(1, 1, 'deleteprofile')
+data.setCell(1, 2, 'testcases.delete_w3schoolprofile')
+data.setCell(1, 3, 45789);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'deleteprofile')
-data.setCell(2, 2, 'testcases.delete_w3schoolprofile')
-data.setCell(2, 3, 12888);
+data.setCell(2, 1, 'createprofile')
+data.setCell(2, 2, 'testcases.create_w3schoolprofile')
+data.setCell(2, 3, 34716);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'createprofile')
+data.setCell(3, 2, 'testcases.create_w3schoolprofile')
+data.setCell(3, 3, 31212);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'createprofile')
+data.setCell(4, 2, 'testcases.create_w3schoolprofile')
+data.setCell(4, 3, 24046);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'updateprofile')
+data.setCell(5, 2, 'testcases.update_w3schoolprofile')
+data.setCell(5, 3, 23561);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'deleteprofile')
+data.setCell(6, 2, 'testcases.delete_w3schoolprofile')
+data.setCell(6, 3, 8140);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'deleteprofile')
+data.setCell(7, 2, 'testcases.delete_w3schoolprofile')
+data.setCell(7, 3, 4352);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'deleteprofile')
+data.setCell(8, 2, 'testcases.delete_w3schoolprofile')
+data.setCell(8, 3, 4338);
 window.suiteTableData['webautomationtestsuite']= { tableData: data, tableDiv: 'times-div-webautomationtestsuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-webautomationtestsuite">
               </div> <!-- times-div-webautomationtestsuite -->
             </div> <!-- times-div -->
@@ -327,46 +560,120 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">createprofile(vinayquiet@gmail.com, Bunny@123, vinay)</span>
-                <span class="method-start">24287 ms</span>
+                <span class="method-start">42672 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">49457 ms</span>
+                <span class="method-start">93147 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">98680 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createprofile(vinayquiet@gmail.com, Bunny@123, vinay)</span>
+                <span class="method-start">113945 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">137991 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">144045 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createprofile(vinayquiet@gmail.com, Bunny@123, vinay)</span>
+                <span class="method-start">176817 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">211538 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">272899 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createprofile(vinayquiet@gmail.com, Bunny@123, vinay)</span>
+                <span class="method-start">390057 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">421618 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.update_w3schoolprofile</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">54093 ms</span>
+                <span class="method-start">490289 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">updateprofile(vinayquiet@gmail.com, Bunny@123, vinay)</span>
-                <span class="method-start">69166 ms</span>
+                <span class="method-start">561900 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">93241 ms</span>
+                <span class="method-start">585467 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.delete_w3schoolprofile</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">96559 ms</span>
+                <span class="method-start">616530 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">deleteprofile(vinayquiet@gmail.com, Bunny@123456, vinay)</span>
+                <span class="method-start">666528 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">674672 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setup</span>
+                <span class="method-start">681266 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">deleteprofile(vinayquiet@gmail.com, Bunny@123456, vinay)</span>
+                <span class="method-start">888575 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">934372 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">934416 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">deleteprofile(vinayquiet@gmail.com, Bunny@123456, vinay)</span>
+                <span class="method-start">934416 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">938754 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">deleteprofile(vinayquiet@gmail.com, Bunny@123456, vinay)</span>
-                <span class="method-start">107326 ms</span>
+                <span class="method-start">938786 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">938786 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">120348 ms</span>
+                <span class="method-start">943198 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

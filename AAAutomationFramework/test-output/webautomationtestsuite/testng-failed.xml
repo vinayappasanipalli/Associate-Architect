@@ -3,6 +3,7 @@
 <suite name="Failed suite [webautomationtestsuite]">
   <listeners>
     <listener class-name="utilities.ExtentReport_Listeners"/>
+    <listener class-name="utilities.RetryListener"/>
   </listeners>
   <test thread-count="5" name="webautomationtestcases(failed)">
     <classes>
@@ -10,13 +11,13 @@
         <methods>
           <include name="setup"/>
           <include name="teardown"/>
-          <include name="deleteprofile" invocation-numbers="0"/>
+          <include name="deleteprofile" invocation-numbers="0 0 0 0"/>
         </methods>
       </class> <!-- testcases.delete_w3schoolprofile -->
       <class name="testcases.create_w3schoolprofile">
         <methods>
           <include name="setup"/>
-          <include name="createprofile" invocation-numbers="0"/>
+          <include name="createprofile" invocation-numbers="0 0 0 0"/>
           <include name="teardown"/>
         </methods>
       </class> <!-- testcases.create_w3schoolprofile -->

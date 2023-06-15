@@ -16,8 +16,7 @@ public class ExtentReport_Listeners extends CommonFunctions implements ITestList
 	public ExtentSparkReporter htmlReporter;
 	public ExtentReports extent;
 	public ExtentTest test;
-	
-	
+		
 	@Override
 	public void onStart(ITestContext testContext)
 	{

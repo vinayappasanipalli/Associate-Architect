@@ -5,8 +5,8 @@
 	<test thread-count="5" name="webautomationtestcases">
 	<listeners>
 	<listener class-name="utilities.ExtentReport_Listeners"/>
+	<listener class-name="utilities.RetryListener"/>	
 	</listeners>
-
 		<classes>`
 
 			<class name="testcases.create_w3schoolprofile" />
