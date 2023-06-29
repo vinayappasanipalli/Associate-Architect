@@ -1,23 +1,20 @@
-package testcases;
+package com.associateArchitect.Web.testcases;
 
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import base.BaseDriver;
-import utilities.CommonFunctions;
-import utilities.ReadTestDataExcel;
-
-@Listeners(utilities.ExtentReport_Listeners.class)
+import com.associateArchitect.Utilities.CommonFunctions;
+import com.associateArchitect.Web.base.BaseDriver;
 
 public class delete_w3schoolprofile extends BaseDriver {
-	public static CommonFunctions commonfns;
-	@Test(dataProviderClass = ReadTestDataExcel.class, dataProvider = "bvttestdata")
+	public static com.associateArchitect.Utilities.CommonFunctions commonfns;
+	@Test(dataProviderClass = com.associateArchitect.Utilities.CommonFunctions.class, dataProvider = "bvttestdata")
 	public void deleteprofile(String username,String password,String url) {
 		
 		try {
 			logger.info("************Testcase DeleteProfile is Started**************");
-			CommonFunctions.cf_login(username, password);
+			//CommonFunctions.cf_login(username, password);
 			String expectedtitle="My learning | W3Schools";
 			String actualtitle=driver.getTitle();
 			Assert.assertEquals(actualtitle,expectedtitle,"User Logged in Failed.");			 

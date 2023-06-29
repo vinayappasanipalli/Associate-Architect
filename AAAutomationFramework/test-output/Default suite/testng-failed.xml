@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.delete_w3schoolprofile">
+      <class name="com.webAutomation.testcases.flightticketBooking">
         <methods>
           <include name="setup"/>
+          <include name="flightReservation"/>
           <include name="teardown"/>
-          <include name="deleteprofile" invocation-numbers="0"/>
         </methods>
-      </class> <!-- testcases.delete_w3schoolprofile -->
+      </class> <!-- com.webAutomation.testcases.flightticketBooking -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

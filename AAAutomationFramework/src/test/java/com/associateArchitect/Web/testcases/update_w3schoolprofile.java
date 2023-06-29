@@ -1,19 +1,18 @@
-package testcases;
+package com.associateArchitect.Web.testcases;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import base.BaseDriver;
-import utilities.CommonFunctions;
-import utilities.ReadTestDataExcel;
+import com.associateArchitect.Utilities.CommonFunctions;
+import com.associateArchitect.Web.base.BaseDriver;
 
 public class update_w3schoolprofile extends BaseDriver {
-	public static CommonFunctions commonfns;
-	@Test(dataProviderClass = ReadTestDataExcel.class, dataProvider = "bvttestdata")
+	public static com.associateArchitect.Utilities.CommonFunctions commonfns;
+	@Test(dataProviderClass = com.associateArchitect.Utilities.CommonFunctions.class, dataProvider = "bvttestdata")
 	public void updateprofile(String username,String password,String url) {
 		
 		try {
-			CommonFunctions.cf_login(username, password);
+			//CommonFunctions.cf_login(username, password);
 			CommonFunctions.cf_webelementfoundwait(objrepo.getProperty("upgrade"),50);
 			logger.info("UserLogged in Successfully");
 			Thread.sleep(6000);

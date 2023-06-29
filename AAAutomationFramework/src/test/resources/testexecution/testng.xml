@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+
 <suite name="webautomationtestsuite">
 
 	<test thread-count="5" name="webautomationtestcases">
-	<listeners>
-	<listener class-name="utilities.ExtentReport_Listeners"/>
-	<listener class-name="utilities.RetryListener"/>	
-	</listeners>
-		<classes>`
-
-			<class name="testcases.create_w3schoolprofile" />
-			<class name="testcases.update_w3schoolprofile" />
-			<class name="testcases.delete_w3schoolprofile" />
+		<listeners>
+			<listener class-name="com.associateArchitect.Utilities.CommonFunctions" />
 			
+			</listeners>
+		<classes>
+			<class name="com.associateArchitect.Web.testcases.create_w3schoolprofile" />
+			<class name="com.associateArchitect.Web.testcases.update_w3schoolprofile" />
+			<class name="com.associateArchitect.Web.testcases.delete_w3schoolprofile" />
 
 		</classes>
 
 
-	</test> <!--Test-->
+	</test> <!--Test -->
 
-</suite> <!--Suite-->
+</suite> <!--Suite -->

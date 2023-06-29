@@ -2,25 +2,24 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [webautomationtestsuite]">
   <listeners>
-    <listener class-name="utilities.ExtentReport_Listeners"/>
-    <listener class-name="utilities.RetryListener"/>
+    <listener class-name="com.associateArchitect.Utilities.CommonFunctions"/>
   </listeners>
   <test thread-count="5" name="webautomationtestcases(failed)">
     <classes>
-      <class name="testcases.delete_w3schoolprofile">
+      <class name="com.associateArchitect.Web.testcases.create_w3schoolprofile">
         <methods>
-          <include name="setup"/>
+          <include name="createprofile" invocation-numbers="0 0 0"/>
           <include name="teardown"/>
-          <include name="deleteprofile" invocation-numbers="0 0 0 0"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- testcases.delete_w3schoolprofile -->
-      <class name="testcases.create_w3schoolprofile">
+      </class> <!-- com.associateArchitect.Web.testcases.create_w3schoolprofile -->
+      <class name="com.associateArchitect.Web.testcases.delete_w3schoolprofile">
         <methods>
-          <include name="setup"/>
-          <include name="createprofile" invocation-numbers="0 0 0 0"/>
           <include name="teardown"/>
+          <include name="setup"/>
+          <include name="deleteprofile" invocation-numbers="0 0 0"/>
         </methods>
-      </class> <!-- testcases.create_w3schoolprofile -->
+      </class> <!-- com.associateArchitect.Web.testcases.delete_w3schoolprofile -->
     </classes>
   </test> <!-- webautomationtestcases(failed) -->
 </suite> <!-- Failed suite [webautomationtestsuite] -->
