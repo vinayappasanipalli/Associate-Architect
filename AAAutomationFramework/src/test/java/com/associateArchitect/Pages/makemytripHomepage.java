@@ -20,13 +20,14 @@ import java.util.List;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 public class makemytripHomepage extends BaseDriver {
 	
-	CommonFunctions common = new CommonFunctions();
+	public  CommonFunctions common = new CommonFunctions();
 
-	static WebDriver driver;
+	public WebDriver driver;
 
 	By loginButton = By.xpath("//li[@class='makeFlex hrtlCenter font10 makeRelative lhUser userLoggedOut']");
 	By onewayRadiobutton = By.xpath("//li[@class='selected']");
 	By roundtripRadiobutton = By.xpath("//li[@data-cy='roundTrip']");
+	
 	By selectedroundtripRadiobutton = By.className("selected");
 	By fromSelection = By.id("fromCity");
 	static By fromPlaceDropdownLocator = By.id("react-autowhatever-1-section-0-item-0");
@@ -51,6 +52,7 @@ public class makemytripHomepage extends BaseDriver {
 	private Select toPlaceSelect;
 
 	private WebElement toPlaceDropdown;
+	//private WebDriver driver;
 
 	public makemytripHomepage(WebDriver d) {
 		this.driver = d;
@@ -118,13 +120,13 @@ public class makemytripHomepage extends BaseDriver {
 
 	}
 
-	public static void userRandomlySelectsFromPlace() {
+	public void userRandomlySelectsFromPlace() {
 		WebElement option = driver.findElement(fromPlaceDropdownLocator);
 		option.click();
 
 	}
 
-	public static void userRandomlySelectsToPlace() {
+	public  void userRandomlySelectsToPlace() {
 		WebElement option = driver.findElement(toPlaceDropdownLocator);
 		option.click();
 

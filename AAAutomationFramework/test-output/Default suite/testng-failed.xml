@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.webAutomation.testcases.flightticketBooking">
+      <class name="com.associateArchitect.StepDefinitions.flightReservation_OnewayTrip">
         <methods>
-          <include name="setup"/>
-          <include name="flightReservation"/>
+          <include name="setUpClass"/>
           <include name="teardown"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- com.webAutomation.testcases.flightticketBooking -->
+      </class> <!-- com.associateArchitect.StepDefinitions.flightReservation_OnewayTrip -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

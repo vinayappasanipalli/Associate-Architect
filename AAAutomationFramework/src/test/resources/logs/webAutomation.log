@@ -1,22 +1,465 @@
-2023-06-29 00:23:33 INFO  WebAutomation:80 - One Way Radio button is clicked: true
-2023-06-29 00:23:38 INFO  WebAutomation:88 - Screenshot taken when Round Way radio button is selected.
-2023-06-29 00:23:47 INFO  WebAutomation:95 - User Selected Random value from the From dropdown
-2023-06-29 00:23:50 INFO  WebAutomation:102 - User Selected Random value from the To dropdown
-2023-06-29 00:23:50 INFO  WebAutomation:112 - User select the flight with the lowest price
-2023-06-29 00:37:04 INFO  WebAutomation:17 - ************Testcase CreateProfile is Started**************
-2023-06-29 00:37:22 INFO  WebAutomation:17 - ************Testcase CreateProfile is Started**************
-2023-06-29 00:37:37 INFO  WebAutomation:17 - ************Testcase CreateProfile is Started**************
-2023-06-29 00:38:14 INFO  WebAutomation:16 - ************Testcase DeleteProfile is Started**************
-2023-06-29 00:38:31 INFO  WebAutomation:16 - ************Testcase DeleteProfile is Started**************
-2023-06-29 00:38:48 INFO  WebAutomation:16 - ************Testcase DeleteProfile is Started**************
-2023-06-29 04:23:02 INFO  WebAutomation:17 - ************Testcase CreateProfile is Started**************
-2023-06-29 04:23:48 INFO  WebAutomation:17 - ************Testcase CreateProfile is Started**************
-2023-06-29 04:24:19 INFO  WebAutomation:17 - ************Testcase CreateProfile is Started**************
-2023-06-29 04:25:35 INFO  WebAutomation:16 - ************Testcase DeleteProfile is Started**************
-2023-06-29 04:26:01 INFO  WebAutomation:16 - ************Testcase DeleteProfile is Started**************
-2023-06-29 04:26:28 INFO  WebAutomation:16 - ************Testcase DeleteProfile is Started**************
-2023-06-29 04:37:18 INFO  WebAutomation:83 - One Way Radio button is clicked: true
-2023-06-29 04:37:22 INFO  WebAutomation:91 - Screenshot taken when Round Way radio button is selected.
-2023-06-29 04:37:29 INFO  WebAutomation:98 - User Selected Random value from the From dropdown
-2023-06-29 04:37:39 INFO  WebAutomation:105 - User Selected Random value from the To dropdown
-2023-06-29 04:37:40 INFO  WebAutomation:115 - User select the flight with the lowest price
+2023-07-06 07:18:29 INFO  RestAssuredAPI:17 - *********** Started Get_All_Employees Testcase
+2023-07-06 07:18:35 INFO  RestAssuredAPI:55 - This Method is to check the Status line of the Request
+2023-07-06 07:18:35 INFO  RestAssuredAPI:57 - Content-Type is == application/json
+2023-07-06 07:18:35 INFO  RestAssuredAPI:55 - This Method is to check the Status line of the Request
+2023-07-06 07:18:35 INFO  RestAssuredAPI:57 - Content-Type is == application/json
+2023-07-06 07:18:35 INFO  RestAssuredAPI:55 - This Method is to check the Status line of the Request
+2023-07-06 07:18:35 INFO  RestAssuredAPI:57 - Content-Type is == application/json
+2023-07-06 07:18:35 INFO  RestAssuredAPI:26 - *****This Method is to check the Request Response Body
+2023-07-06 07:18:35 INFO  RestAssuredAPI:28 - Response Body = {"status":"success","data":[{"id":1,"employee_name":"Tiger Nixon","employee_salary":320800,"employee_age":61,"profile_image":""},{"id":2,"employee_name":"Garrett Winters","employee_salary":170750,"employee_age":63,"profile_image":""},{"id":3,"employee_name":"Ashton Cox","employee_salary":86000,"employee_age":66,"profile_image":""},{"id":4,"employee_name":"Cedric Kelly","employee_salary":433060,"employee_age":22,"profile_image":""},{"id":5,"employee_name":"Airi Satou","employee_salary":162700,"employee_age":33,"profile_image":""},{"id":6,"employee_name":"Brielle Williamson","employee_salary":372000,"employee_age":61,"profile_image":""},{"id":7,"employee_name":"Herrod Chandler","employee_salary":137500,"employee_age":59,"profile_image":""},{"id":8,"employee_name":"Rhona Davidson","employee_salary":327900,"employee_age":55,"profile_image":""},{"id":9,"employee_name":"Colleen Hurst","employee_salary":205500,"employee_age":39,"profile_image":""},{"id":10,"employee_name":"Sonya Frost","employee_salary":103600,"employee_age":23,"profile_image":""},{"id":11,"employee_name":"Jena Gaines","employee_salary":90560,"employee_age":30,"profile_image":""},{"id":12,"employee_name":"Quinn Flynn","employee_salary":342000,"employee_age":22,"profile_image":""},{"id":13,"employee_name":"Charde Marshall","employee_salary":470600,"employee_age":36,"profile_image":""},{"id":14,"employee_name":"Haley Kennedy","employee_salary":313500,"employee_age":43,"profile_image":""},{"id":15,"employee_name":"Tatyana Fitzpatrick","employee_salary":385750,"employee_age":19,"profile_image":""},{"id":16,"employee_name":"Michael Silva","employee_salary":198500,"employee_age":66,"profile_image":""},{"id":17,"employee_name":"Paul Byrd","employee_salary":725000,"employee_age":64,"profile_image":""},{"id":18,"employee_name":"Gloria Little","employee_salary":237500,"employee_age":59,"profile_image":""},{"id":19,"employee_name":"Bradley Greer","employee_salary":132000,"employee_age":41,"profile_image":""},{"id":20,"employee_name":"Dai Rios","employee_salary":217500,"employee_age":35,"profile_image":""},{"id":21,"employee_name":"Jenette Caldwell","employee_salary":345000,"employee_age":30,"profile_image":""},{"id":22,"employee_name":"Yuri Berry","employee_salary":675000,"employee_age":40,"profile_image":""},{"id":23,"employee_name":"Caesar Vance","employee_salary":106450,"employee_age":21,"profile_image":""},{"id":24,"employee_name":"Doris Wilder","employee_salary":85600,"employee_age":23,"profile_image":""}],"message":"Successfully! All records has been fetched."}
+2023-07-06 07:18:35 INFO  RestAssuredAPI:42 - This Methos is to check the Response Time of the Request
+2023-07-06 07:18:35 INFO  RestAssuredAPI:44 - Response Time is ==4108
+2023-07-06 07:18:35 WARN  RestAssuredAPI:46 - Response Time is morethan 3000
+2023-07-06 07:18:35 INFO  RestAssuredAPI:42 - This Methos is to check the Response Time of the Request
+2023-07-06 07:18:35 INFO  RestAssuredAPI:44 - Response Time is ==4108
+2023-07-06 07:18:35 WARN  RestAssuredAPI:46 - Response Time is morethan 3000
+2023-07-06 07:18:35 INFO  RestAssuredAPI:42 - This Methos is to check the Response Time of the Request
+2023-07-06 07:18:35 INFO  RestAssuredAPI:44 - Response Time is ==4108
+2023-07-06 07:18:35 WARN  RestAssuredAPI:46 - Response Time is morethan 3000
+2023-07-06 07:18:35 INFO  RestAssuredAPI:34 - ********This Method is to check the status COde of the Response
+2023-07-06 07:18:35 INFO  RestAssuredAPI:36 - Status Code is ==200
+2023-07-06 07:18:35 INFO  RestAssuredAPI:64 - *******Finished TestCase Get_All_Employees*******
+2023-07-06 07:18:35 INFO  RestAssuredAPI:22 - *********** Started Get_Single_EmployeeDetails Testcase
+2023-07-06 07:18:47 INFO  RestAssuredAPI:67 - This Method is to check the Status line of the Request
+2023-07-06 07:18:47 INFO  RestAssuredAPI:70 - Content-Type is == application/json
+2023-07-06 07:18:47 INFO  RestAssuredAPI:67 - This Method is to check the Status line of the Request
+2023-07-06 07:18:47 INFO  RestAssuredAPI:70 - Content-Type is == application/json
+2023-07-06 07:18:47 INFO  RestAssuredAPI:67 - This Method is to check the Status line of the Request
+2023-07-06 07:18:47 INFO  RestAssuredAPI:70 - Content-Type is == application/json
+2023-07-06 07:18:47 INFO  RestAssuredAPI:32 - *******This Method is Check the Request Response Body****
+2023-07-06 07:18:47 INFO  RestAssuredAPI:34 - Response Body = {"message":"Error Occured! Page Not found, contact rstapi2example@gmail.com"}
+2023-07-06 07:18:47 INFO  RestAssuredAPI:32 - *******This Method is Check the Request Response Body****
+2023-07-06 07:18:47 INFO  RestAssuredAPI:34 - Response Body = {"message":"Error Occured! Page Not found, contact rstapi2example@gmail.com"}
+2023-07-06 07:18:47 INFO  RestAssuredAPI:32 - *******This Method is Check the Request Response Body****
+2023-07-06 07:18:47 INFO  RestAssuredAPI:34 - Response Body = {"message":"Error Occured! Page Not found, contact rstapi2example@gmail.com"}
+2023-07-06 07:18:47 INFO  RestAssuredAPI:48 - This Method is to check the Response Time of the Request
+2023-07-06 07:18:47 INFO  RestAssuredAPI:50 - Response Time is ==1301
+2023-07-06 07:18:47 INFO  RestAssuredAPI:40 - *******TC#2 - This Method is Check the Request Status Code****
+2023-07-06 07:18:47 INFO  RestAssuredAPI:42 - Status Code = 404
+2023-07-06 07:18:47 INFO  RestAssuredAPI:40 - *******TC#2 - This Method is Check the Request Status Code****
+2023-07-06 07:18:47 INFO  RestAssuredAPI:42 - Status Code = 404
+2023-07-06 07:18:47 INFO  RestAssuredAPI:40 - *******TC#2 - This Method is Check the Request Status Code****
+2023-07-06 07:18:47 INFO  RestAssuredAPI:42 - Status Code = 404
+2023-07-06 07:18:47 INFO  RestAssuredAPI:86 - This Method is to check the Content Lenght of the Request
+2023-07-06 07:18:47 INFO  RestAssuredAPI:88 - Content-Length is == 96
+2023-07-06 07:18:47 INFO  RestAssuredAPI:78 - This Method is to check the Server Type of the Request
+2023-07-06 07:18:47 INFO  RestAssuredAPI:80 - Server Type == nginx/1.21.6
+2023-07-06 07:18:47 INFO  RestAssuredAPI:59 - This Method is to check the Response's Status Line
+2023-07-06 07:18:47 INFO  RestAssuredAPI:61 - Response's Status Line =HTTP/1.1 404 Not Found
+2023-07-06 07:18:47 INFO  RestAssuredAPI:59 - This Method is to check the Response's Status Line
+2023-07-06 07:18:47 INFO  RestAssuredAPI:61 - Response's Status Line =HTTP/1.1 404 Not Found
+2023-07-06 07:18:47 INFO  RestAssuredAPI:59 - This Method is to check the Response's Status Line
+2023-07-06 07:18:47 INFO  RestAssuredAPI:61 - Response's Status Line =HTTP/1.1 404 Not Found
+2023-07-06 07:18:47 INFO  RestAssuredAPI:96 - *******TC#2- Finished TestCase Get_SingleEmployeeDetails*******
+2023-07-06 07:18:47 INFO  RestAssuredAPI:27 - **** TC#3- Started Test Case Post New Record into the Database ******
+2023-07-06 07:18:54 INFO  RestAssuredAPI:79 - This Method is to check the Status line of the Request
+2023-07-06 07:18:54 INFO  RestAssuredAPI:82 - Content-Type is == text/html; charset=UTF-8
+2023-07-06 07:18:54 INFO  RestAssuredAPI:79 - This Method is to check the Status line of the Request
+2023-07-06 07:18:54 INFO  RestAssuredAPI:82 - Content-Type is == text/html; charset=UTF-8
+2023-07-06 07:18:54 INFO  RestAssuredAPI:79 - This Method is to check the Status line of the Request
+2023-07-06 07:18:54 INFO  RestAssuredAPI:82 - Content-Type is == text/html; charset=UTF-8
+2023-07-06 07:18:54 INFO  RestAssuredAPI:42 - *******This Method is Check the Request Response Body****
+2023-07-06 07:18:54 INFO  RestAssuredAPI:44 - Response Body = <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Too Many Requests</title>
+
+        <!-- Fonts -->
+        <link rel="dns-prefetch" href="//fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+        <!-- Styles -->
+        <style>
+            html, body {
+                background-color: #fff;
+                color: #636b6f;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 100;
+                height: 100vh;
+                margin: 0;
+            }
+
+            .full-height {
+                height: 100vh;
+            }
+
+            .flex-center {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            .position-ref {
+                position: relative;
+            }
+
+            .code {
+                border-right: 2px solid;
+                font-size: 26px;
+                padding: 0 15px 0 15px;
+                text-align: center;
+            }
+
+            .message {
+                font-size: 18px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex-center position-ref full-height">
+            <div class="code">
+                429            </div>
+
+            <div class="message" style="padding: 10px;">
+                Too Many Requests            </div>
+        </div>
+    </body>
+</html>
+
+2023-07-06 07:18:54 INFO  RestAssuredAPI:42 - *******This Method is Check the Request Response Body****
+2023-07-06 07:18:54 INFO  RestAssuredAPI:44 - Response Body = <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Too Many Requests</title>
+
+        <!-- Fonts -->
+        <link rel="dns-prefetch" href="//fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+        <!-- Styles -->
+        <style>
+            html, body {
+                background-color: #fff;
+                color: #636b6f;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 100;
+                height: 100vh;
+                margin: 0;
+            }
+
+            .full-height {
+                height: 100vh;
+            }
+
+            .flex-center {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            .position-ref {
+                position: relative;
+            }
+
+            .code {
+                border-right: 2px solid;
+                font-size: 26px;
+                padding: 0 15px 0 15px;
+                text-align: center;
+            }
+
+            .message {
+                font-size: 18px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex-center position-ref full-height">
+            <div class="code">
+                429            </div>
+
+            <div class="message" style="padding: 10px;">
+                Too Many Requests            </div>
+        </div>
+    </body>
+</html>
+
+2023-07-06 07:18:54 INFO  RestAssuredAPI:42 - *******This Method is Check the Request Response Body****
+2023-07-06 07:18:54 INFO  RestAssuredAPI:44 - Response Body = <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Too Many Requests</title>
+
+        <!-- Fonts -->
+        <link rel="dns-prefetch" href="//fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+        <!-- Styles -->
+        <style>
+            html, body {
+                background-color: #fff;
+                color: #636b6f;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 100;
+                height: 100vh;
+                margin: 0;
+            }
+
+            .full-height {
+                height: 100vh;
+            }
+
+            .flex-center {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            .position-ref {
+                position: relative;
+            }
+
+            .code {
+                border-right: 2px solid;
+                font-size: 26px;
+                padding: 0 15px 0 15px;
+                text-align: center;
+            }
+
+            .message {
+                font-size: 18px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex-center position-ref full-height">
+            <div class="code">
+                429            </div>
+
+            <div class="message" style="padding: 10px;">
+                Too Many Requests            </div>
+        </div>
+    </body>
+</html>
+
+2023-07-06 07:18:54 INFO  RestAssuredAPI:60 - This Method is to check the Response Time of the Request
+2023-07-06 07:18:54 INFO  RestAssuredAPI:62 - Response Time is ==1955
+2023-07-06 07:18:54 INFO  RestAssuredAPI:52 - *******This Method is Check the Request Status Code****
+2023-07-06 07:18:54 INFO  RestAssuredAPI:54 - Status Code = 429
+2023-07-06 07:18:54 INFO  RestAssuredAPI:52 - *******This Method is Check the Request Status Code****
+2023-07-06 07:18:54 INFO  RestAssuredAPI:54 - Status Code = 429
+2023-07-06 07:18:54 INFO  RestAssuredAPI:52 - *******This Method is Check the Request Status Code****
+2023-07-06 07:18:54 INFO  RestAssuredAPI:54 - Status Code = 429
+2023-07-06 07:18:54 INFO  RestAssuredAPI:107 - This Method is to check the Content Encoding of the Request 
+2023-07-06 07:18:54 INFO  RestAssuredAPI:109 - Content-Encoding==gzip
+2023-07-06 07:18:54 INFO  RestAssuredAPI:98 - This Method is to check the Content Lenght of the Request
+2023-07-06 07:18:54 INFO  RestAssuredAPI:100 - Content-Length is == 595
+2023-07-06 07:18:54 INFO  RestAssuredAPI:90 - This Method is to check the Server Type of the Request
+2023-07-06 07:18:54 INFO  RestAssuredAPI:92 - Server Type == Apache
+2023-07-06 07:18:54 INFO  RestAssuredAPI:90 - This Method is to check the Server Type of the Request
+2023-07-06 07:18:54 INFO  RestAssuredAPI:92 - Server Type == Apache
+2023-07-06 07:18:54 INFO  RestAssuredAPI:90 - This Method is to check the Server Type of the Request
+2023-07-06 07:18:54 INFO  RestAssuredAPI:92 - Server Type == Apache
+2023-07-06 07:18:54 INFO  RestAssuredAPI:71 - This Method is to check the Response's Status Line
+2023-07-06 07:18:54 INFO  RestAssuredAPI:73 - Response's Status Line =HTTP/1.1 429 Too Many Requests
+2023-07-06 07:18:54 INFO  RestAssuredAPI:71 - This Method is to check the Response's Status Line
+2023-07-06 07:18:54 INFO  RestAssuredAPI:73 - Response's Status Line =HTTP/1.1 429 Too Many Requests
+2023-07-06 07:18:54 INFO  RestAssuredAPI:71 - This Method is to check the Response's Status Line
+2023-07-06 07:18:54 INFO  RestAssuredAPI:73 - Response's Status Line =HTTP/1.1 429 Too Many Requests
+2023-07-06 07:18:54 INFO  RestAssuredAPI:115 - *******TC#3 - Finished TestCase Post_NewRecord_intoDatabase*******
+2023-07-06 07:18:54 INFO  RestAssuredAPI:27 - **** TC#4- Started Test Case Update Employee Details  into the Database ******
+2023-07-06 07:19:03 INFO  RestAssuredAPI:42 - *******This Method is Check the Request Response Body****
+2023-07-06 07:19:03 INFO  RestAssuredAPI:44 - Response Body = <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Too Many Requests</title>
+
+        <!-- Fonts -->
+        <link rel="dns-prefetch" href="//fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+        <!-- Styles -->
+        <style>
+            html, body {
+                background-color: #fff;
+                color: #636b6f;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 100;
+                height: 100vh;
+                margin: 0;
+            }
+
+            .full-height {
+                height: 100vh;
+            }
+
+            .flex-center {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            .position-ref {
+                position: relative;
+            }
+
+            .code {
+                border-right: 2px solid;
+                font-size: 26px;
+                padding: 0 15px 0 15px;
+                text-align: center;
+            }
+
+            .message {
+                font-size: 18px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex-center position-ref full-height">
+            <div class="code">
+                429            </div>
+
+            <div class="message" style="padding: 10px;">
+                Too Many Requests            </div>
+        </div>
+    </body>
+</html>
+
+2023-07-06 07:19:04 INFO  RestAssuredAPI:42 - *******This Method is Check the Request Response Body****
+2023-07-06 07:19:04 INFO  RestAssuredAPI:44 - Response Body = <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Too Many Requests</title>
+
+        <!-- Fonts -->
+        <link rel="dns-prefetch" href="//fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+        <!-- Styles -->
+        <style>
+            html, body {
+                background-color: #fff;
+                color: #636b6f;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 100;
+                height: 100vh;
+                margin: 0;
+            }
+
+            .full-height {
+                height: 100vh;
+            }
+
+            .flex-center {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            .position-ref {
+                position: relative;
+            }
+
+            .code {
+                border-right: 2px solid;
+                font-size: 26px;
+                padding: 0 15px 0 15px;
+                text-align: center;
+            }
+
+            .message {
+                font-size: 18px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex-center position-ref full-height">
+            <div class="code">
+                429            </div>
+
+            <div class="message" style="padding: 10px;">
+                Too Many Requests            </div>
+        </div>
+    </body>
+</html>
+
+2023-07-06 07:19:04 INFO  RestAssuredAPI:42 - *******This Method is Check the Request Response Body****
+2023-07-06 07:19:04 INFO  RestAssuredAPI:44 - Response Body = <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Too Many Requests</title>
+
+        <!-- Fonts -->
+        <link rel="dns-prefetch" href="//fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+        <!-- Styles -->
+        <style>
+            html, body {
+                background-color: #fff;
+                color: #636b6f;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 100;
+                height: 100vh;
+                margin: 0;
+            }
+
+            .full-height {
+                height: 100vh;
+            }
+
+            .flex-center {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            .position-ref {
+                position: relative;
+            }
+
+            .code {
+                border-right: 2px solid;
+                font-size: 26px;
+                padding: 0 15px 0 15px;
+                text-align: center;
+            }
+
+            .message {
+                font-size: 18px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex-center position-ref full-height">
+            <div class="code">
+                429            </div>
+
+            <div class="message" style="padding: 10px;">
+                Too Many Requests            </div>
+        </div>
+    </body>
+</html>
+
+2023-07-06 07:19:04 INFO  RestAssuredAPI:52 - ********This Method is to check the status COde of the Response
+2023-07-06 07:19:04 INFO  RestAssuredAPI:54 - Status Code is ==429
+2023-07-06 07:19:04 INFO  RestAssuredAPI:52 - ********This Method is to check the status COde of the Response
+2023-07-06 07:19:04 INFO  RestAssuredAPI:54 - Status Code is ==429
+2023-07-06 07:19:04 INFO  RestAssuredAPI:52 - ********This Method is to check the status COde of the Response
+2023-07-06 07:19:04 INFO  RestAssuredAPI:54 - Status Code is ==429
+2023-07-06 07:19:04 INFO  RestAssuredAPI:59 - *******TC#4 is Finished******

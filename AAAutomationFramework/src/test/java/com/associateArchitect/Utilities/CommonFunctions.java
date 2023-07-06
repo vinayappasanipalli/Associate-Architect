@@ -31,6 +31,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.IAnnotationTransformer;
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestContext;
@@ -39,7 +40,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.ITestAnnotation;
 
-import com.associateArchitect.Cucumber.base.baseDriver_Cucumber;
+import com.associateArchitect.Cucumber.base.BaseDriver_Cucumber;
 import com.associateArchitect.Utilities.CommonFunctions.FrameworkConfig;
 import com.associateArchitect.Web.base.BaseDriver;
 import com.aventstack.extentreports.ExtentReports;
@@ -51,22 +52,28 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 import io.cucumber.java.After;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class CommonFunctions extends baseDriver_Cucumber implements IRetryAnalyzer, IAnnotationTransformer, ITestListener {
+public class CommonFunctions implements IRetryAnalyzer, IAnnotationTransformer, ITestListener {
 	public static WebDriver driver;
 	public static Logger logger;
 
 	public static String capturescreenshot(WebDriver driver) {
+		String screenshotPath="";
+		try {
+			
+		if(driver!=null) {
 		Date currentdate = new Date();
 		String screenshotfilename = currentdate.toString().replace(" ", "-").replace(":", "-");
 		TakesScreenshot takeScreenshot = (TakesScreenshot) driver;
 		File sourceFile = takeScreenshot.getScreenshotAs(OutputType.FILE);
 		File destFile = new File("./screenshots/" + screenshotfilename + ".png");
-		try {
+		
 			FileUtils.copyFile(sourceFile, destFile);
+			screenshotPath=destFile.getAbsolutePath();
+		}
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		return destFile.getAbsolutePath();
+		return screenshotPath;
 	}
 
 //	public static void cf_login(String username, String password) throws Throwable {
@@ -100,6 +107,7 @@ public class CommonFunctions extends baseDriver_Cucumber implements IRetryAnalyz
 	public static WebElement cf_explicitwaitForElementPresent(WebDriver driver,By locator,int timeout) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
 		wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+		//Assert.assertTrue(driver.findElement(locator).isDisplayed());
 		return driver.findElement(locator);
 	}
 	
@@ -183,6 +191,7 @@ public class CommonFunctions extends baseDriver_Cucumber implements IRetryAnalyz
 		extent.setSystemInfo("Host Name", "Localhost");
 		extent.setSystemInfo("Enviornment", "QA Instance");
 		extent.setSystemInfo("User", "Vinay");
+		
 
 	}
 
@@ -241,7 +250,7 @@ public class CommonFunctions extends baseDriver_Cucumber implements IRetryAnalyz
 			return("age"+generatedString);
 		}
 		
-		//** Functional to call and read the environment variable from config file**//
+		//** Function to call and read the environment variable from config file**//
 	
 		@Config.LoadPolicy(Config.LoadType.MERGE)
 		@Config.Sources({
@@ -263,44 +272,5 @@ public class CommonFunctions extends baseDriver_Cucumber implements IRetryAnalyz
 			
 		
 		}
-		
-		public static void setup() throws IOException {
-			if (driver == null) {
-				configfile = new FileReader(System.getProperty("user.dir")
-						+ "//src//test//resources//configfiles//applicationconfiguration.properties");
-				objrepofile = new FileReader(System.getProperty("user.dir")
-						+ "//src//test//resources//configfiles//objectrepository.properties");
-				appconfig.load(configfile);
-				objrepo.load(objrepofile);
-				logger = Logger.getLogger("WebAutomation");// added Logger
-				PropertyConfigurator.configure(
-						System.getProperty("user.dir") + "//src//test//resources//Configfiles//log4j.properties");// added
-				logger.setLevel(Level.DEBUG);
-				config = ConfigFactory.create(FrameworkConfig.class);
-				
-			}	
-			if (appconfig.getProperty("browser").equalsIgnoreCase("firefox")) {
-				WebDriverManager.firefoxdriver().setup();
-				driver = new FirefoxDriver();
-				driver.manage().window().maximize();
-				String applicationUrl = config.applicationurl();
-				driver.get(applicationUrl);
-			
-			} else if (appconfig.getProperty("browser").equalsIgnoreCase("chrome")) {
-				WebDriverManager.chromedriver().setup();
-				driver = new ChromeDriver();
-				//driver.manage().window().maximize();
-				//driver.get(appconfig.getProperty("applicationurl"));
-				//config.environment();
-				//String applicationurl = config.applicationurl();
-				//driver.get(applicationurl)
-				String applicationUrl = config.applicationurl();
-				driver.get(applicationUrl);
-			}
-		}
-		
-		 public void teardown() throws IOException {
-	     driver.close();
-	           
-			}
 }
+	

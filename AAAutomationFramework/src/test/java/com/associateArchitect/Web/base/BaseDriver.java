@@ -51,38 +51,18 @@ public class BaseDriver {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 			driver.manage().window().maximize();
-			//driver.get(appconfig.getProperty("applicationurl"));
-			//driver.get(appconfig.getProperty(environment);
-			// CommonFunctions config = ConfigFactory.create(com.utilities.CommonFunctions.FrameworkConfig);
-			//config.url();
-			 //String url = config.url();
-			 //String applicationurl = config.applicationurl();
-			// driver.get(config);
-			 //driver.get(applicationurl);
+			
 			String applicationUrl = config.applicationurl();
 			driver.get(applicationUrl);
 		
 		} else if (appconfig.getProperty("browser").equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
-			//driver.manage().window().maximize();
-			//driver.get(appconfig.getProperty("applicationurl"));
-			//config.environment();
-			//String applicationurl = config.applicationurl();
-			//driver.get(applicationurl)
+		
 			String applicationUrl = config.applicationurl();
 			driver.get(applicationUrl);
 		}
-//		driver.manage().window().maximize();
-//		String applicationUrl = getAppConfigUrl();
-//        driver.get(applicationUrl);
-		
 	}
-//	private String getAppConfigUrl() {
-//		String environment = config.environment();
-//		String key = environment + ".applicationurl";
-//		return appconfig.getProperty(key);
-//	}
 
 	@AfterMethod
 	//@After

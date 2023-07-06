@@ -1,91 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="4" ignored="0" total="7" passed="1" failed="2" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-29T00:36:45 IST" name="webautomationtestsuite" finished-at="2023-06-29T00:38:51 IST" duration-ms="126504">
+  <suite started-at="2023-07-06T07:42:00 IST" name="webautomationtestsuite" finished-at="2023-07-06T07:43:29 IST" duration-ms="89156">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.associateArchitect.testRunner.testRunner@57a78e3]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-06-29T00:36:45 IST" name="webautomationtestcases" finished-at="2023-06-29T00:38:51 IST" duration-ms="126504">
-      <class name="com.associateArchitect.Web.testcases.create_w3schoolprofile">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.associateArchitect.Web.testcases.create_w3schoolprofile@2cf3d63b]" started-at="2023-06-29T00:36:48 IST" name="setup" finished-at="2023-06-29T00:37:04 IST" duration-ms="16105" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method retried="true" signature="createprofile(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.associateArchitect.Web.testcases.create_w3schoolprofile@2cf3d63b]" started-at="2023-06-29T00:37:04 IST" name="createprofile" data-provider="bvttestdata" finished-at="2023-06-29T00:37:04 IST" duration-ms="172" status="SKIP">
+    <test started-at="2023-07-06T07:42:00 IST" name="webautomationtestcases" finished-at="2023-07-06T07:43:29 IST" duration-ms="89156">
+      <class name="com.associateArchitect.testRunner.testRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.associateArchitect.testRunner.testRunner@57a78e3]" started-at="2023-07-06T07:42:01 IST" name="setUpClass" finished-at="2023-07-06T07:42:01 IST" duration-ms="220" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[vinayquiet@gmail.com]]>
+                <![CDATA[org.testng.TestRunner@5034681f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.associateArchitect.testRunner.testRunner@57a78e3]" started-at="2023-07-06T07:42:01 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-07-06T07:42:24 IST" duration-ms="22972" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Make a multiwayTrip flight reservation"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Bunny@123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Darshith]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Appasanipalli]]>
+                <![CDATA["Flight Booking for MultiwayTrip"]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
-              <![CDATA[Create Profile Testcase is Failed]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Create Profile Testcase is Failed
-at org.testng.Assert.fail(Assert.java:87)
-at com.associateArchitect.Web.testcases.create_w3schoolprofile.createprofile(create_w3schoolprofile.java:38)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[@id='w3loginbtn']
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
 Build info: version: '4.8.3', revision: 'e5e76298c3'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [db1b9616-be69-425e-be78-dec1a9aa6844, findElement {using=xpath, value=//a[@id='w3loginbtn']}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 114.0.2, moz:accessibilityChecks: false, moz:buildID: 20230619081400, moz:debuggerAddress: 127.0.0.1:31612, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 3848, moz:profile: C:\Users\BSA\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:31612/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: db1b9616-be69-425e-be78-dec1a9aa6844
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+Command: [null, findElement {using=xpath, value=//span[@class='lbl_input appendBottom5']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0, moz:accessibilityChecks: false, moz:buildID: 20230629134642, moz:debuggerAddress: 127.0.0.1:24226, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 16428, moz:profile: C:\Users\BSA\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:24226/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, findElement {using=xpath, value=//span[@class='lbl_input appendBottom5']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0, moz:accessibilityChecks: false, moz:buildID: 20230629134642, moz:debuggerAddress: 127.0.0.1:24226, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 16428, moz:profile: C:\Users\BSA\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:24226/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:154)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
@@ -93,479 +58,52 @@ at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(Elemen
 at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at com.associateArchitect.Pages.w3Loginpage.clickLoginButton(w3Loginpage.java:29)
-at com.associateArchitect.Web.testcases.create_w3schoolprofile.createprofile(create_w3schoolprofile.java:20)
-... 28 more
+at com.associateArchitect.Pages.makemytripHomepage.clickTravellers(makemytripHomepage.java:74)
+at com.associateArchitect.StepDefinitions.multiTripReservation.selectrandomTravellers(multiTripReservation.java:113)
+at ✽.Select the random Travellers for the multiwaytrip(file:///C:/Users/BSA/git/Associate-Architect/AAAutomationFramework/./src/test/resources/featureFiles_Cucumber/multiTrip.feature:11)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createprofile -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.associateArchitect.Web.testcases.create_w3schoolprofile@2cf3d63b]" started-at="2023-06-29T00:37:04 IST" name="teardown" finished-at="2023-06-29T00:37:10 IST" duration-ms="5500" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.associateArchitect.Web.testcases.create_w3schoolprofile@2cf3d63b]" started-at="2023-06-29T00:37:10 IST" name="setup" finished-at="2023-06-29T00:37:22 IST" duration-ms="11701" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method retried="true" signature="createprofile(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.associateArchitect.Web.testcases.create_w3schoolprofile@2cf3d63b]" started-at="2023-06-29T00:37:22 IST" name="createprofile" data-provider="bvttestdata" finished-at="2023-06-29T00:37:22 IST" duration-ms="75" status="SKIP">
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.associateArchitect.testRunner.testRunner@57a78e3]" started-at="2023-07-06T07:42:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-07-06T07:42:55 IST" duration-ms="31413" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[vinayquiet@gmail.com]]>
+                <![CDATA["Make a OnewayTrip flight reservation"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Bunny@123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Darshith]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Appasanipalli]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Create Profile Testcase is Failed]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Create Profile Testcase is Failed
-at org.testng.Assert.fail(Assert.java:87)
-at com.associateArchitect.Web.testcases.create_w3schoolprofile.createprofile(create_w3schoolprofile.java:38)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[@id='w3loginbtn']
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [ac586b58-efa1-429a-bf62-92035c43f22d, findElement {using=xpath, value=//a[@id='w3loginbtn']}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 114.0.2, moz:accessibilityChecks: false, moz:buildID: 20230619081400, moz:debuggerAddress: 127.0.0.1:43945, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 488, moz:profile: C:\Users\BSA\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:43945/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: ac586b58-efa1-429a-bf62-92035c43f22d
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at com.associateArchitect.Pages.w3Loginpage.clickLoginButton(w3Loginpage.java:29)
-at com.associateArchitect.Web.testcases.create_w3schoolprofile.createprofile(create_w3schoolprofile.java:20)
-... 28 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createprofile -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.associateArchitect.Web.testcases.create_w3schoolprofile@2cf3d63b]" started-at="2023-06-29T00:37:22 IST" name="teardown" finished-at="2023-06-29T00:37:25 IST" duration-ms="3793" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.associateArchitect.Web.testcases.create_w3schoolprofile@2cf3d63b]" started-at="2023-06-29T00:37:26 IST" name="setup" finished-at="2023-06-29T00:37:37 IST" duration-ms="11837" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="createprofile(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.associateArchitect.Web.testcases.create_w3schoolprofile@2cf3d63b]" started-at="2023-06-29T00:37:37 IST" name="createprofile" data-provider="bvttestdata" finished-at="2023-06-29T00:37:37 IST" duration-ms="44" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[vinayquiet@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Bunny@123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Darshith]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Appasanipalli]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Create Profile Testcase is Failed]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Create Profile Testcase is Failed
-at org.testng.Assert.fail(Assert.java:87)
-at com.associateArchitect.Web.testcases.create_w3schoolprofile.createprofile(create_w3schoolprofile.java:38)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[@id='w3loginbtn']
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [fd2aa41d-addc-4f47-b983-25fbb9dd87be, findElement {using=xpath, value=//a[@id='w3loginbtn']}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 114.0.2, moz:accessibilityChecks: false, moz:buildID: 20230619081400, moz:debuggerAddress: 127.0.0.1:26998, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 16204, moz:profile: C:\Users\BSA\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:26998/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: fd2aa41d-addc-4f47-b983-25fbb9dd87be
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at com.associateArchitect.Pages.w3Loginpage.clickLoginButton(w3Loginpage.java:29)
-at com.associateArchitect.Web.testcases.create_w3schoolprofile.createprofile(create_w3schoolprofile.java:20)
-... 28 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createprofile -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.associateArchitect.Web.testcases.create_w3schoolprofile@2cf3d63b]" started-at="2023-06-29T00:37:37 IST" name="teardown" finished-at="2023-06-29T00:37:42 IST" duration-ms="4441" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.associateArchitect.Web.testcases.create_w3schoolprofile -->
-      <class name="com.associateArchitect.Web.testcases.delete_w3schoolprofile">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.associateArchitect.Web.testcases.delete_w3schoolprofile@1a75e76a]" started-at="2023-06-29T00:37:59 IST" name="setup" finished-at="2023-06-29T00:38:14 IST" duration-ms="14576" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method retried="true" signature="deleteprofile(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.associateArchitect.Web.testcases.delete_w3schoolprofile@1a75e76a]" started-at="2023-06-29T00:38:14 IST" name="deleteprofile" data-provider="bvttestdata" finished-at="2023-06-29T00:38:14 IST" duration-ms="13" status="SKIP">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[vinayquiet@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Bunny@123456]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[vinay]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Delete Profile Testcase is Failed]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Delete Profile Testcase is Failed
-at org.testng.Assert.fail(Assert.java:87)
-at com.associateArchitect.Web.testcases.delete_w3schoolprofile.deleteprofile(delete_w3schoolprofile.java:35)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.AssertionError: User Logged in Failed. expected [My learning | W3Schools] but found [MakeMyTrip USA - #1 Travel Website for Flight Booking, Airline Tickets]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at com.associateArchitect.Web.testcases.delete_w3schoolprofile.deleteprofile(delete_w3schoolprofile.java:20)
-... 28 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteprofile -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.associateArchitect.Web.testcases.delete_w3schoolprofile@1a75e76a]" started-at="2023-06-29T00:38:14 IST" name="teardown" finished-at="2023-06-29T00:38:19 IST" duration-ms="4596" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.associateArchitect.Web.testcases.delete_w3schoolprofile@1a75e76a]" started-at="2023-06-29T00:38:19 IST" name="setup" finished-at="2023-06-29T00:38:31 IST" duration-ms="12680" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method retried="true" signature="deleteprofile(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.associateArchitect.Web.testcases.delete_w3schoolprofile@1a75e76a]" started-at="2023-06-29T00:38:31 IST" name="deleteprofile" data-provider="bvttestdata" finished-at="2023-06-29T00:38:31 IST" duration-ms="12" status="SKIP">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[vinayquiet@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Bunny@123456]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[vinay]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Delete Profile Testcase is Failed]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Delete Profile Testcase is Failed
-at org.testng.Assert.fail(Assert.java:87)
-at com.associateArchitect.Web.testcases.delete_w3schoolprofile.deleteprofile(delete_w3schoolprofile.java:35)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.AssertionError: User Logged in Failed. expected [My learning | W3Schools] but found [MakeMyTrip USA - #1 Travel Website for Flight Booking, Airline Tickets]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at com.associateArchitect.Web.testcases.delete_w3schoolprofile.deleteprofile(delete_w3schoolprofile.java:20)
-... 28 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteprofile -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.associateArchitect.Web.testcases.delete_w3schoolprofile@1a75e76a]" started-at="2023-06-29T00:38:31 IST" name="teardown" finished-at="2023-06-29T00:38:35 IST" duration-ms="3818" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.associateArchitect.Web.testcases.delete_w3schoolprofile@1a75e76a]" started-at="2023-06-29T00:38:35 IST" name="setup" finished-at="2023-06-29T00:38:48 IST" duration-ms="12503" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="deleteprofile(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.associateArchitect.Web.testcases.delete_w3schoolprofile@1a75e76a]" started-at="2023-06-29T00:38:48 IST" name="deleteprofile" data-provider="bvttestdata" finished-at="2023-06-29T00:38:48 IST" duration-ms="4" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[vinayquiet@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Bunny@123456]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[vinay]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Delete Profile Testcase is Failed]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Delete Profile Testcase is Failed
-at org.testng.Assert.fail(Assert.java:87)
-at com.associateArchitect.Web.testcases.delete_w3schoolprofile.deleteprofile(delete_w3schoolprofile.java:35)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.AssertionError: User Logged in Failed. expected [My learning | W3Schools] but found [MakeMyTrip USA - #1 Travel Website for Flight Booking, Airline Tickets]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at com.associateArchitect.Web.testcases.delete_w3schoolprofile.deleteprofile(delete_w3schoolprofile.java:20)
-... 28 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteprofile -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.associateArchitect.Web.testcases.delete_w3schoolprofile@1a75e76a]" started-at="2023-06-29T00:38:48 IST" name="teardown" finished-at="2023-06-29T00:38:51 IST" duration-ms="3453" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.associateArchitect.Web.testcases.delete_w3schoolprofile -->
-      <class name="com.associateArchitect.Web.testcases.update_w3schoolprofile">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.associateArchitect.Web.testcases.update_w3schoolprofile@33bc72d1]" started-at="2023-06-29T00:37:42 IST" name="setup" finished-at="2023-06-29T00:37:55 IST" duration-ms="13096" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="updateprofile(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.associateArchitect.Web.testcases.update_w3schoolprofile@33bc72d1]" started-at="2023-06-29T00:37:55 IST" name="updateprofile" data-provider="bvttestdata" finished-at="2023-06-29T00:37:55 IST" duration-ms="10" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[vinayquiet@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Bunny@123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[vinay]]>
+                <![CDATA["Flight Booking for OnewayTrip"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- updateprofile -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.associateArchitect.Web.testcases.update_w3schoolprofile@33bc72d1]" started-at="2023-06-29T00:37:55 IST" name="teardown" finished-at="2023-06-29T00:37:59 IST" duration-ms="4166" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.associateArchitect.testRunner.testRunner@57a78e3]" started-at="2023-07-06T07:42:55 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-07-06T07:43:29 IST" duration-ms="33985" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Make a RoundTrip flight reservation"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Flight Booking for RoundTrip"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.associateArchitect.Web.testcases.update_w3schoolprofile -->
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.associateArchitect.testRunner.testRunner@57a78e3]" started-at="2023-07-06T07:43:29 IST" name="tearDownClass" finished-at="2023-07-06T07:43:29 IST" duration-ms="221" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.associateArchitect.testRunner.testRunner -->
     </test> <!-- webautomationtestcases -->
   </suite> <!-- webautomationtestsuite -->
 </testng-results>

@@ -2,51 +2,51 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [restassuredtestsuite]">
   <listeners>
-    <listener class-name="com.utilities.CommonFunctions"/>
+    <listener class-name="com.associateArchitect.Utilities.CommonFunctions"/>
   </listeners>
   <test thread-count="5" name="restassuredtestcases(failed)">
     <classes>
-      <class name="com.AARestAssuredAPI.testcases.Post_NewRecord_intoDatabase">
+      <class name="com.associateArchitectAPI.testcases.Post_NewRecord_intoDatabase">
         <methods>
           <include name="createEmployee"/>
-          <include name="tearDown"/>
           <include name="checkResponseBody"/>
           <include name="checkserverType"/>
           <include name="checkstatusLine"/>
-          <include name="checkStatusCode"/>
-          <include name="setup"/>
-          <include name="checkContentType"/>
-        </methods>
-      </class> <!-- com.AARestAssuredAPI.testcases.Post_NewRecord_intoDatabase -->
-      <class name="com.AARestAssuredAPI.testcases.Get_SingleEmployeeDetails">
-        <methods>
-          <include name="checkContentType"/>
-          <include name="getsingleEmployee"/>
           <include name="tearDown"/>
-          <include name="checkResponseBody"/>
-          <include name="checkstatusLine"/>
           <include name="checkStatusCode"/>
           <include name="setup"/>
+          <include name="checkContentType"/>
         </methods>
-      </class> <!-- com.AARestAssuredAPI.testcases.Get_SingleEmployeeDetails -->
-      <class name="com.AARestAssuredAPI.testcases.Get_All_Employees">
+      </class> <!-- com.associateArchitectAPI.testcases.Post_NewRecord_intoDatabase -->
+      <class name="com.associateArchitectAPI.testcases.Get_All_Employees">
         <methods>
-          <include name="checkResponseTime"/>
           <include name="tearDown"/>
           <include name="getAllEmployees"/>
           <include name="checkContentType"/>
+          <include name="checkResponseTime"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.AARestAssuredAPI.testcases.Get_All_Employees -->
-      <class name="com.AARestAssuredAPI.testcases.Put_Update_EmployeeDetails">
+      </class> <!-- com.associateArchitectAPI.testcases.Get_All_Employees -->
+      <class name="com.associateArchitectAPI.testcases.Put_Update_EmployeeDetails">
         <methods>
-          <include name="tearDown"/>
-          <include name="checkResponseBody"/>
-          <include name="updateEmployeeDetails"/>
-          <include name="setup"/>
           <include name="checkStatusCode"/>
+          <include name="checkResponseBody"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="updateEmployeeDetails"/>
         </methods>
-      </class> <!-- com.AARestAssuredAPI.testcases.Put_Update_EmployeeDetails -->
+      </class> <!-- com.associateArchitectAPI.testcases.Put_Update_EmployeeDetails -->
+      <class name="com.associateArchitectAPI.testcases.Get_SingleEmployeeDetails">
+        <methods>
+          <include name="checkResponseBody"/>
+          <include name="checkstatusLine"/>
+          <include name="checkStatusCode"/>
+          <include name="checkContentType"/>
+          <include name="setup"/>
+          <include name="getsingleEmployee"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.associateArchitectAPI.testcases.Get_SingleEmployeeDetails -->
     </classes>
   </test> <!-- restassuredtestcases(failed) -->
 </suite> <!-- Failed suite [restassuredtestsuite] -->

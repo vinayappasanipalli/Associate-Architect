@@ -2,24 +2,17 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [webautomationtestsuite]">
   <listeners>
-    <listener class-name="com.associateArchitect.Utilities.CommonFunctions"/>
+    <listener class-name="com.associateArchitect.Cucumber.base.BaseDriver_Cucumber"/>
   </listeners>
   <test thread-count="5" name="webautomationtestcases(failed)">
     <classes>
-      <class name="com.associateArchitect.Web.testcases.create_w3schoolprofile">
+      <class name="com.associateArchitect.testRunner.testRunner">
         <methods>
-          <include name="createprofile" invocation-numbers="0 0 0"/>
-          <include name="teardown"/>
-          <include name="setup"/>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
         </methods>
-      </class> <!-- com.associateArchitect.Web.testcases.create_w3schoolprofile -->
-      <class name="com.associateArchitect.Web.testcases.delete_w3schoolprofile">
-        <methods>
-          <include name="teardown"/>
-          <include name="setup"/>
-          <include name="deleteprofile" invocation-numbers="0 0 0"/>
-        </methods>
-      </class> <!-- com.associateArchitect.Web.testcases.delete_w3schoolprofile -->
+      </class> <!-- com.associateArchitect.testRunner.testRunner -->
     </classes>
   </test> <!-- webautomationtestcases(failed) -->
 </suite> <!-- Failed suite [webautomationtestsuite] -->
