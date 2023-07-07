@@ -24,13 +24,13 @@
                 <configuration>
                     <suiteXmlFiles>
                         <suiteXmlFile>
-                            src/test/resources/testexecution/testng.xml</suiteXmlFile>
+                            C:\Users\BSA\git\Associate-Architect\AAAutomationFramework\src\test\resources\testexecution\testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
-                    <systemPropertyVariables>
-						<extent.reporter.spark.start>true</extent.reporter.spark.start>
-							<extent.reporter.spark.out>	src/test/resources/report.html</extent.reporter.spark.out>
+<!--                    <systemPropertyVariables>-->
+<!--						<extent.reporter.spark.start>true</extent.reporter.spark.start>-->
+<!--							<extent.reporter.spark.out>	src/test/resources/report.html</extent.reporter.spark.out>-->
 						
-					</systemPropertyVariables>
+<!--					</systemPropertyVariables>-->
                 </configuration>
             </plugin>
         </plugins>
