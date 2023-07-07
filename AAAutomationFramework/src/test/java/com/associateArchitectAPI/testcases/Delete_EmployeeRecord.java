@@ -1,10 +1,11 @@
 package com.associateArchitectAPI.testcases;
 
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
-import com.associateArchitectAPI.base.BaseDriver;
 
 import io.restassured.RestAssured;
 import io.restassured.http.Method;
@@ -12,16 +13,18 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
-public class Delete_EmployeeRecord extends BaseDriver {
+public class Delete_EmployeeRecord  {
 	
-	RequestSpecification httpRequest;
-	Response response;
-//	String empName = RestAPI_Utilities.empName();
-//	String empSalary = RestAPI_Utilities.empSal();
-//	String empAge = RestAPI_Utilities.empAge();
+	public static RequestSpecification httpRequest;
+	public static Response response;
+	public String empID = "19"; // Hard coded value - Input for getting details of single employee & update employee
+	public Logger logger;
 	
 	@BeforeClass
-	void deleteEmployee() throws InterruptedException {
+public	void deleteEmployee() throws InterruptedException {
+		logger = Logger.getLogger("RestAssuredAPI");// added Logger
+		PropertyConfigurator.configure(System.getProperty("user.dir")+"//src//test//resources//Configfiles//log4j.properties");// added
+		logger.setLevel(Level.DEBUG);
 		logger.info("TC#5- Started Test Case Delete Employee Record*******");
 		RestAssured.baseURI = "https://dummy.restapiexample.com/api/v1";
 		httpRequest = RestAssured.given();

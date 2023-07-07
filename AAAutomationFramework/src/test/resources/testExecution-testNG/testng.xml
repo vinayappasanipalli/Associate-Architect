@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="restassuredtestsuite">
+
+	<test thread-count="5" name="TestNG testcases">
+	<listeners>
+	<listener class-name="com.associateArchitect.Utilities.CommonFunctions" />
+	</listeners>
+		<classes>
+			<class name="com.associateArchitect.Web.testcases.create_w3schoolprofile" />
+	
+			<class name="com.associateArchitect.Web.testcases.update_w3schoolprofile" />
+			<class
+				name="com.associateArchitect.Web.testcases.delete_w3schoolprofile" />
+					</classes>
+
+
+	</test> <!--Test-->
+
+</suite> <!--Suite-->

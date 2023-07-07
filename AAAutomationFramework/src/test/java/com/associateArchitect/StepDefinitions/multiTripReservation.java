@@ -29,6 +29,15 @@ import com.aventstack.extentreports.GherkinKeyword;
 import com.aventstack.extentreports.gherkin.model.Feature;
 import com.aventstack.extentreports.gherkin.model.Scenario;
 
+
+/*****************************************************************************************************
+*Class Name : multiTripReservation
+*Description : This class extends BaseDriver_Cucumber class. This class class represents the 
+*              step definitions for a Cucumber scenario related to multi-way trip reservation on the
+*               Makemytrip website. It interacts with page objects, performs actions, 
+*               handles assertions, captures screenshots, and utilizes reporting for test execution.       
+ ******************************************************************************************************/
+
 public class multiTripReservation extends BaseDriver_Cucumber {
 	makemytripHomepage mTH;
 

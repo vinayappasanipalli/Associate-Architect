@@ -1,5 +1,8 @@
 package com.associateArchitectAPI.testcases;
 
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.json.simple.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -7,23 +10,33 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.associateArchitect.Utilities.CommonFunctions;
-import com.associateArchitectAPI.base.BaseDriver;
+import com.associateArchitect.Web.base.BaseDriver;
 
 import io.restassured.RestAssured;
 import io.restassured.http.Method;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
-public class Post_NewRecord_intoDatabase extends BaseDriver {
+public class Post_NewRecord_intoDatabase {
 
-	RequestSpecification httpRequest;
-	Response response;
+//	RequestSpecification httpRequest;
+//	Response response;
 	String empName = CommonFunctions.empName();
 	String empSalary = CommonFunctions.empSal();
 	String empAge = CommonFunctions.empAge();
+	
+	public static RequestSpecification httpRequest;
+	public static Response response;
+	public String empID = "19"; // Hard coded value - Input for getting details of single employee & update employee
+	public Logger logger;
 
 	@BeforeClass
 	public void createEmployee() throws InterruptedException {
+		logger = Logger.getLogger("RestAssuredAPI");// added Logger
+		//PropertyConfigurator.configure("log4j.properties");// added
+		PropertyConfigurator.configure(System.getProperty("user.dir")+"//src//test//resources//Configfiles//log4j.properties");// added
+		logger.setLevel(Level.DEBUG);
+		
 		logger.info("**** TC#3- Started Test Case Post New Record into the Database ******");
 		RestAssured.baseURI = "https://dummy.restapiexample.com/api/v1";
 		httpRequest = RestAssured.given();

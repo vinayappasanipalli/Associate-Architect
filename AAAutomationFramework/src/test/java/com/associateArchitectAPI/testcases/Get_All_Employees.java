@@ -1,19 +1,32 @@
 package com.associateArchitectAPI.testcases;
 
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.associateArchitectAPI.base.BaseDriver;
-
 import io.restassured.RestAssured;
 import io.restassured.http.Method;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
 
-public class Get_All_Employees extends BaseDriver {
+public class Get_All_Employees {
+	
+	public static RequestSpecification httpRequest;
+	public static Response response;
+	public String empID = "19"; // Hard coded value - Input for getting details of single employee & update employee
+	public Logger logger;
 	
 	@BeforeClass
 	public void getAllEmployees() throws InterruptedException {
+		logger = Logger.getLogger("RestAssuredAPI");// added Logger
+		//PropertyConfigurator.configure("log4j.properties");// added
+		PropertyConfigurator.configure(System.getProperty("user.dir")+"//src//test//resources//Configfiles//log4j.properties");// added
+		logger.setLevel(Level.DEBUG);
+
 		logger.info("*********** Started Get_All_Employees Testcase");
 		RestAssured.baseURI = "https://dummy.restapiexample.com/api/v1";
 		httpRequest = RestAssured.given();

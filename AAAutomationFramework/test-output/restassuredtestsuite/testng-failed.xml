@@ -6,32 +6,12 @@
   </listeners>
   <test thread-count="5" name="restassuredtestcases(failed)">
     <classes>
-      <class name="com.associateArchitectAPI.testcases.Post_NewRecord_intoDatabase">
-        <methods>
-          <include name="createEmployee"/>
-          <include name="checkResponseBody"/>
-          <include name="checkserverType"/>
-          <include name="checkstatusLine"/>
-          <include name="tearDown"/>
-          <include name="checkStatusCode"/>
-          <include name="setup"/>
-          <include name="checkContentType"/>
-        </methods>
-      </class> <!-- com.associateArchitectAPI.testcases.Post_NewRecord_intoDatabase -->
-      <class name="com.associateArchitectAPI.testcases.Get_All_Employees">
-        <methods>
-          <include name="tearDown"/>
-          <include name="getAllEmployees"/>
-          <include name="checkContentType"/>
-          <include name="checkResponseTime"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.associateArchitectAPI.testcases.Get_All_Employees -->
       <class name="com.associateArchitectAPI.testcases.Put_Update_EmployeeDetails">
         <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
           <include name="checkStatusCode"/>
           <include name="checkResponseBody"/>
-          <include name="setup"/>
           <include name="tearDown"/>
           <include name="updateEmployeeDetails"/>
         </methods>
@@ -42,11 +22,28 @@
           <include name="checkstatusLine"/>
           <include name="checkStatusCode"/>
           <include name="checkContentType"/>
-          <include name="setup"/>
           <include name="getsingleEmployee"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.associateArchitectAPI.testcases.Get_SingleEmployeeDetails -->
+      <class name="com.associateArchitectAPI.testcases.Post_NewRecord_intoDatabase">
+        <methods>
+          <include name="createEmployee"/>
+          <include name="checkResponseBody"/>
+          <include name="checkserverType"/>
+          <include name="checkstatusLine"/>
+          <include name="tearDown"/>
+          <include name="checkStatusCode"/>
+          <include name="checkContentType"/>
+        </methods>
+      </class> <!-- com.associateArchitectAPI.testcases.Post_NewRecord_intoDatabase -->
+      <class name="com.associateArchitectAPI.testcases.Get_All_Employees">
+        <methods>
+          <include name="tearDown"/>
+          <include name="getAllEmployees"/>
+          <include name="checkContentType"/>
+        </methods>
+      </class> <!-- com.associateArchitectAPI.testcases.Get_All_Employees -->
     </classes>
   </test> <!-- restassuredtestcases(failed) -->
 </suite> <!-- Failed suite [restassuredtestsuite] -->

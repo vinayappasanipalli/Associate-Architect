@@ -18,16 +18,24 @@ import java.time.LocalDate;
 import java.time.Month;
 import java.util.List;
 import org.openqa.selenium.support.ui.ExpectedCondition;
+
+/*****************************************************************************************************
+*Class Name : makemytripHomepage
+*Description : This class extends BaseDriver_Cucumber class. This class provides methods to interact
+*              with various elements on the Makemytrip application and perform actions such as selecting options, 
+*              clicking buttons, and handling flight selection based on the lowest price.        
+ ******************************************************************************************************/
+
 public class makemytripHomepage extends BaseDriver {
-	
-	public  CommonFunctions common = new CommonFunctions();
+
+	public CommonFunctions common = new CommonFunctions();
 
 	public WebDriver driver;
 
 	By loginButton = By.xpath("//li[@class='makeFlex hrtlCenter font10 makeRelative lhUser userLoggedOut']");
 	By onewayRadiobutton = By.xpath("//li[@class='selected']");
 	By roundtripRadiobutton = By.xpath("//li[@data-cy='roundTrip']");
-	
+
 	By selectedroundtripRadiobutton = By.className("selected");
 	By fromSelection = By.id("fromCity");
 	static By fromPlaceDropdownLocator = By.id("react-autowhatever-1-section-0-item-0");
@@ -52,13 +60,12 @@ public class makemytripHomepage extends BaseDriver {
 	private Select toPlaceSelect;
 
 	private WebElement toPlaceDropdown;
-	//private WebDriver driver;
+	// private WebDriver driver;
 
 	public makemytripHomepage(WebDriver d) {
 		this.driver = d;
 
 	}
-
 
 	public void clickFlightSearchButton() {
 		driver.findElement(flightSearchButton).click();
@@ -126,7 +133,7 @@ public class makemytripHomepage extends BaseDriver {
 
 	}
 
-	public  void userRandomlySelectsToPlace() {
+	public void userRandomlySelectsToPlace() {
 		WebElement option = driver.findElement(toPlaceDropdownLocator);
 		option.click();
 
@@ -179,13 +186,6 @@ public class makemytripHomepage extends BaseDriver {
 
 		if (selectedFlight != null) {
 			selectedFlight.findElement(By.cssSelector("button.flight-book")).click();
-
-			// Wait for the "To" date picker to be visible
-			// WebDriverWait wait = new WebDriverWait(driver, 10);
-			// WebElement toDateContainer =
-			// wait.until(ExpectedConditions.visibilityOfElementLocated(toDateLocator));
-
-			// Find the lowest fare date element within the current month
 			List<WebElement> lowestFareDates = driver.findElements(lowestFareDateLocator);
 			int currentMonth = LocalDate.now().getMonthValue();
 			int currentYear = LocalDate.now().getYear();

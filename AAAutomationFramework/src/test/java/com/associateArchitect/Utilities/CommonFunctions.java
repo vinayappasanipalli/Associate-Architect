@@ -52,10 +52,23 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 import io.cucumber.java.After;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
+/*****************************************************************************************************
+*Class Name : CommonFunctions
+*Description : This class holds the collection of all common functions that are utilized by 
+*              all the test cases
+* ******************************************************************************************************/
+
 public class CommonFunctions implements IRetryAnalyzer, IAnnotationTransformer, ITestListener {
 	public static WebDriver driver;
 	public static Logger logger;
 
+
+	/*****************************************************************************************************
+	*Function Name : capturescreenshot
+	*Description   : This method captures a screenshot of the web page displayed in the provided WebDriver instance. 
+	*                It saves the screenshot as a file and returns the absolute path of the saved screenshot file.
+	******************************************************************************************************/	
+	
 	public static String capturescreenshot(WebDriver driver) {
 		String screenshotPath="";
 		try {
@@ -76,17 +89,6 @@ public class CommonFunctions implements IRetryAnalyzer, IAnnotationTransformer, 
 		return screenshotPath;
 	}
 
-//	public static void cf_login(String username, String password) throws Throwable {
-//
-//		cf_webelementclick((objrepo.getProperty("Login_Button")));
-//		//cf_webelementfoundwait(objrepo.getProperty("Password"), 30);
-//		cf_webelementsendkeys((objrepo.getProperty("Email")), username);
-//		cf_webelementsendkeys((objrepo.getProperty("Password")), password);
-//		cf_webelementclick((objrepo.getProperty("Login")));
-//
-//		Thread.sleep(4000);
-//
-//	}
 
 	public static void cf_webelementclick(String locator) {
 		try {
@@ -133,6 +135,14 @@ public class CommonFunctions implements IRetryAnalyzer, IAnnotationTransformer, 
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locator)));
 		return element;
 	}
+	
+	/*****************************************************************************************************
+	*Function Name : gettestdata
+	*Description   : This method method retrieves test data from an Excel file based on the provided 
+	*                Excel sheet name.It uses the Apache POI library to read the Excel file and extract 
+	*                the cell values.The retrieved test data is returned as a two-dimensional string array,
+	*                 which can be used as a data provider for TestNG tests.
+	******************************************************************************************************/	
 
 	@DataProvider(name = "bvttestdata")
 	public String[][] gettestdata(Method m) throws Exception {
@@ -153,6 +163,15 @@ public class CommonFunctions implements IRetryAnalyzer, IAnnotationTransformer, 
 		}
 		return testData;
 	}
+	
+	
+
+/*****************************************************************************************************
+	*Function Name : Retry Analyzer
+	*Description : This class servers as a retry analyzer and annotation transformer. The retry() method  
+	*              determines whether a test should be retried based on the "retrycount" and "maxcount"              
+	*              variables.The transform() method sets the retry analyzer for tests using this class.
+******************************************************************************************************/		
 
 	private int retrycount = 0;
 	private static final int maxcount = 2;
@@ -173,7 +192,13 @@ public class CommonFunctions implements IRetryAnalyzer, IAnnotationTransformer, 
 	}
 
 	
-	//**---------Extent Report Listener Methods**------------//
+
+/*****************************************************************************************************
+*Function Name : Extent Reports
+*Description : These functions are used for setting up the ExtentReports framework, handling test step statuses, 
+*			   and executing specific actions during different test events like test start, success, failure, 
+*              skip, and completion.*                 
+******************************************************************************************************/	
 	public ExtentSparkReporter htmlReporter;
 	public ExtentReports extent;
 	public ExtentTest test;
@@ -250,23 +275,24 @@ public class CommonFunctions implements IRetryAnalyzer, IAnnotationTransformer, 
 			return("age"+generatedString);
 		}
 		
-		//** Function to call and read the environment variable from config file**//
+
+		/*****************************************************************************************************
+		*Function Name : FrameworkConfig
+		*Description : This method represents a configuration interface that provides methods for retrieving various 
+		*              properties related to the framework configuration. It uses annotations to specify the 
+		*              load policy and sources of the configuration properties. The method allows accessing 
+		*              properties such as the browser, environment, and application URL.
+		******************************************************************************************************/	
 	
 		@Config.LoadPolicy(Config.LoadType.MERGE)
 		@Config.Sources({
-		//"system.properties",
-		//"System.env",
-		//"classpath:configfiles/applicationconfiguration.properties",
-		"file:${user.dir}/src/test/resources/configfiles/applicationconfiguration.properties"})
-       // "file:/src/test/resources/configfiles/applicationconfiguration.properties"})
-        //"file:C:\\Users\\BSA\\git\\Associate-Architect\\AAAutomationFramework\\src\\test\\resources\\configfiles\\applicationconfiguration.properties"})
+		"file:${user.dir}/src/test/resources/configfiles/applicationconfiguration.properties"})       
 		public static interface FrameworkConfig extends Config{
 		
 			@Key("browser")
 			String browser();
 			@Key("environment")
 			String environment();
-			//String username();
 			@Key("${environment}.applicationurl")
 			String applicationurl();
 			

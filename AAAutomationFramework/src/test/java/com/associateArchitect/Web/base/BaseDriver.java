@@ -17,6 +17,8 @@ import org.testng.annotations.BeforeMethod;
 import com.associateArchitect.Utilities.CommonFunctions.FrameworkConfig;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
 
 public class BaseDriver {
 	public static WebDriver driver;
@@ -26,11 +28,12 @@ public class BaseDriver {
 	public static FileReader configfile;
 	public static FileReader objrepofile;
 	public static Logger logger;
-	//public static FrameworkConfig config;
-	//public static com.utilities.CommonFunctions.FrameworkConfig config = ConfigFactory.create(com.utilities.CommonFunctions.FrameworkConfig.class);
+	public static RequestSpecification httpRequest;
+	public static Response response;
+	public String empID = "19"; // Hard coded value - Input for getting details of single employee & update employee
+	
 	public static com.associateArchitect.Utilities.CommonFunctions.FrameworkConfig config;  
-	@BeforeMethod
-	//@Before
+	@BeforeMethod	
 	public void setup() throws IOException {
 		if (driver == null) {
 			configfile = new FileReader(System.getProperty("user.dir")

@@ -7,7 +7,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.associateArchitect.Utilities.CommonFunctions;
-import com.associateArchitectAPI.base.BaseDriver;
+import com.associateArchitect.Web.base.BaseDriver;
 
 import io.restassured.RestAssured;
 import io.restassured.http.Method;

@@ -1,5 +1,13 @@
 package com.associateArchitect.testRunner;
 
+/*****************************************************************************************************
+*Class Name   : testRunner
+**Description : This class serves as the test execution entry point for running Cucumber scenarios. 
+*               It configures the test options, glues the step definitions, sets up hooks 
+*               for setup/teardown operations, and generates test reports using the specified plugins.       
+ ******************************************************************************************************/
+
+
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
@@ -22,7 +30,7 @@ import io.cucumber.testng.CucumberOptions;
 import io.github.bonigarcia.wdm.WebDriverManager;
 //@RunWith(Cucumber.class) 
 @CucumberOptions(
-		//tags="@makeMyTrip_OnewayTrip_TC1 or @makeMyTrip_RoundTrip_TC2 or @makeMyTrip_MultiwayTrip_TC3",
+		
 		tags="@roundtripTC1 or @onewaytripTC2 or @multitripTC3",
 		features="./src/test/resources/featureFiles_Cucumber",
 		glue={"com.associateArchitect.StepDefinitions"},
