@@ -24,7 +24,7 @@
                 <configuration>
                     <suiteXmlFiles>
                         <suiteXmlFile>
-                            testng.xml</suiteXmlFile>
+                            src/test/resources/testexecution/testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
                     <systemPropertyVariables>
 						<extent.reporter.spark.start>true</extent.reporter.spark.start>
