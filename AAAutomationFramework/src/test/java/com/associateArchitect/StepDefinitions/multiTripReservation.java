@@ -2,6 +2,7 @@ package com.associateArchitect.StepDefinitions;
 
 import java.io.FileReader;
 import java.io.IOException;
+import java.time.Duration;
 
 import org.aeonbits.owner.ConfigFactory;
 import org.apache.log4j.Level;
@@ -34,7 +35,7 @@ import com.aventstack.extentreports.gherkin.model.Scenario;
 *Class Name : multiTripReservation
 *Description : This class extends BaseDriver_Cucumber class. This class class represents the 
 *              step definitions for a Cucumber scenario related to multi-way trip reservation on the
-*               Makemytrip website. It interacts with page objects, performs actions, 
+*               Make-my-trip web-site. It interacts with page objects, performs actions, 
 *               handles assertions, captures screenshots, and utilizes reporting for test execution.       
  ******************************************************************************************************/
 
@@ -44,6 +45,7 @@ public class multiTripReservation extends BaseDriver_Cucumber {
 	@Given("User Login to MakemyTrip site for multiwaytrip")
 	public void login() throws Exception {
 		setup();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		ExtentTest logInfo = null;
 		try {
 			test = extent.createTest(Feature.class, "Flight Booking for MultiwayTrip");
@@ -127,15 +129,13 @@ public class multiTripReservation extends BaseDriver_Cucumber {
 
 	@Then("User performs Search and taken a screenshot of the results for a multiway trip")
 	public void performflightSearch() {
-//		mTH.clickFlightSearchButton();
-//		CommonFunctions.capturescreenshot(driver);
 		ExtentTest logInfo = null;
 		try {
 			logInfo = test.createNode(new GherkinKeyword("Then"),"User performs Search and taken a screenshot of the results for a round trip");
-		// mTH.selectFairTye();
-		mTH.clickFlightSearchButton();
+			mTH.clickFlightSearchButton();
 		String screenshot = CommonFunctions.capturescreenshot(driver);
 		logInfo.addScreenCaptureFromPath(screenshot);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		}
 		catch (AssertionError | Exception e) {
 			testStepHandle("FAIL",logInfo, e);

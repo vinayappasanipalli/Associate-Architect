@@ -4,46 +4,22 @@
   <listeners>
     <listener class-name="com.associateArchitect.Utilities.CommonFunctions"/>
   </listeners>
-  <test thread-count="5" name="restassuredtestcases(failed)">
+  <test thread-count="5" name="TestNG testcases(failed)">
     <classes>
-      <class name="com.associateArchitectAPI.testcases.Put_Update_EmployeeDetails">
+      <class name="com.associateArchitect.Web.testcases.delete_w3schoolprofile">
         <methods>
           <include name="teardown"/>
           <include name="setup"/>
-          <include name="checkStatusCode"/>
-          <include name="checkResponseBody"/>
-          <include name="tearDown"/>
-          <include name="updateEmployeeDetails"/>
+          <include name="deleteprofile" invocation-numbers="0 0 0"/>
         </methods>
-      </class> <!-- com.associateArchitectAPI.testcases.Put_Update_EmployeeDetails -->
-      <class name="com.associateArchitectAPI.testcases.Get_SingleEmployeeDetails">
+      </class> <!-- com.associateArchitect.Web.testcases.delete_w3schoolprofile -->
+      <class name="com.associateArchitect.Web.testcases.create_w3schoolprofile">
         <methods>
-          <include name="checkResponseBody"/>
-          <include name="checkstatusLine"/>
-          <include name="checkStatusCode"/>
-          <include name="checkContentType"/>
-          <include name="getsingleEmployee"/>
-          <include name="tearDown"/>
+          <include name="createprofile" invocation-numbers="0 0 0"/>
+          <include name="teardown"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- com.associateArchitectAPI.testcases.Get_SingleEmployeeDetails -->
-      <class name="com.associateArchitectAPI.testcases.Post_NewRecord_intoDatabase">
-        <methods>
-          <include name="createEmployee"/>
-          <include name="checkResponseBody"/>
-          <include name="checkserverType"/>
-          <include name="checkstatusLine"/>
-          <include name="tearDown"/>
-          <include name="checkStatusCode"/>
-          <include name="checkContentType"/>
-        </methods>
-      </class> <!-- com.associateArchitectAPI.testcases.Post_NewRecord_intoDatabase -->
-      <class name="com.associateArchitectAPI.testcases.Get_All_Employees">
-        <methods>
-          <include name="tearDown"/>
-          <include name="getAllEmployees"/>
-          <include name="checkContentType"/>
-        </methods>
-      </class> <!-- com.associateArchitectAPI.testcases.Get_All_Employees -->
+      </class> <!-- com.associateArchitect.Web.testcases.create_w3schoolprofile -->
     </classes>
-  </test> <!-- restassuredtestcases(failed) -->
+  </test> <!-- TestNG testcases(failed) -->
 </suite> <!-- Failed suite [restassuredtestsuite] -->

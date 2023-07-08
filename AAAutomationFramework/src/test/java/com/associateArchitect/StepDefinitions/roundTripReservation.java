@@ -2,6 +2,7 @@ package com.associateArchitect.StepDefinitions;
 
 import java.io.FileReader;
 import java.io.IOException;
+import java.time.Duration;
 
 import org.aeonbits.owner.ConfigFactory;
 import org.apache.log4j.Level;
@@ -32,7 +33,7 @@ import com.aventstack.extentreports.gherkin.model.Scenario;
 *Class Name : roundTripReservation
 *Description : This class extends BaseDriver_Cucumber class. This class represents the 
 *              step definitions for a Cucumber scenario related to round-way trip reservation on the
-*               Makemytrip website. It interacts with page objects, performs actions, 
+*               Make my-trip web-site. It interacts with page objects, performs actions, 
 *               handles assertions, captures screenshots, and utilizes reporting for test execution.       
  ******************************************************************************************************/
 public class roundTripReservation extends BaseDriver_Cucumber {
@@ -41,6 +42,7 @@ public class roundTripReservation extends BaseDriver_Cucumber {
 	@Given("User Login to MakemyTrip")
 	public void login() throws Exception {
 		setup();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		ExtentTest logInfo = null;
 		try {
 			test = extent.createTest(Feature.class, "Flight Booking for Roundtrip Trip");
@@ -74,43 +76,94 @@ public class roundTripReservation extends BaseDriver_Cucumber {
 
 	@Then("Take a Screenshot when a Roundtrip radio button is selected")
 	public void takeScreenshot() {
-		boolean actualValueRound = mTH.isroundtripRadiobuttonSelected();
-		if (actualValueRound) {
-			CommonFunctions.capturescreenshot(driver);
-
+		ExtentTest logInfo=null;
+		try{
+			boolean actualValueRound = mTH.isroundtripRadiobuttonSelected();
+			if (actualValueRound) {
+				CommonFunctions.capturescreenshot(driver);
+				logInfo = test.createNode(new GherkinKeyword("Then"),"A Screenshot is taken when a Roundtrip radio button is selected");
 		}
+		}
+			catch (AssertionError | Exception e) {
+				testStepHandle("FAIL", logInfo, e);
+
+			}
+
+		
 	}
 
 	@When("Randomly select a Destination for the trip")
 	public void selectDestination() {
+		ExtentTest logInfo=null;
+		try {
+		
 		mTH.fromSelectionClick();
 		mTH.userRandomlySelectsFromPlace();
+		logInfo = test.createNode(new GherkinKeyword("When"),"User Randomly selected a Destination for the trip");
+	}
+		catch (AssertionError | Exception e) {
+			testStepHandle("FAIL", logInfo, e);
+
+		}
 	}
 
 	@And("Randomly select a Arrival for the trip")
 	public void selectArrival() {
+		ExtentTest logInfo=null;
+		try {
 		mTH.toSelectionClick();
 		mTH.userRandomlySelectsToPlace();
+		logInfo = test.createNode(new GherkinKeyword("And"),"User Randomly selected a Arrival for the trip");
 	}
+		catch (AssertionError | Exception e) {
+			testStepHandle("FAIL", logInfo, e);
 
+		}
+	}
+	
 	@When("Select the lowest fare flight for the roundtrip")
 	public void selectlowestfareFlight() {
+		ExtentTest logInfo=null;
+		try {
 		mTH.selectFlightWithLowestPrice();
+		logInfo = test.createNode(new GherkinKeyword("When"),"User Randomly selected the flight with lowest price");
+	}
+		catch (AssertionError | Exception e) {
+			testStepHandle("FAIL", logInfo, e);
+
+		}
 	}
 
 	@Then("Select the random Travellers for the roundtrip")
 	public void selectrandomTravellers() {
+		ExtentTest logInfo=null;
+		try {
 		mTH.clickTravellers();
 		mTH.clickNoofAdults();
 		mTH.clickNoofChildren();
 		mTH.clickTravellersApply();
+		logInfo = test.createNode(new GherkinKeyword("Then"),"User Randomly selected the travellers");
+	}
+		catch (AssertionError | Exception e) {
+			testStepHandle("FAIL", logInfo, e);
+
+		}
 	}
 
 	@Then("User performs Search and taken a screenshot of the results for a round trip")
 	public void performflightSearch() {
+		ExtentTest logInfo=null;
+		try {
 		mTH.clickFlightSearchButton();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
 		CommonFunctions.capturescreenshot(driver);
+		logInfo = test.createNode(new GherkinKeyword("Then"),"User performed flight search");
 
+	}
+		catch (AssertionError | Exception e) {
+			testStepHandle("FAIL", logInfo, e);
+
+		}
 	}
 
 	@Then("User Logout from the application")

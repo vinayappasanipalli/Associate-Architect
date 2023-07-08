@@ -262,3 +262,9 @@
 2023-07-07 03:14:59 INFO  RestAssuredAPI:84 - This Method is to check the Response's Status Line
 2023-07-07 03:14:59 INFO  RestAssuredAPI:86 - Response's Status Line =HTTP/1.1 429 Too Many Requests
 2023-07-07 03:14:59 INFO  RestAssuredAPI:128 - *******TC#3 - Finished TestCase Post_NewRecord_intoDatabase*******
+2023-07-07 23:45:09 INFO  WebAutomation:17 - ************Testcase CreateProfile is Started**************
+2023-07-07 23:45:24 INFO  WebAutomation:17 - ************Testcase CreateProfile is Started**************
+2023-07-07 23:45:42 INFO  WebAutomation:17 - ************Testcase CreateProfile is Started**************
+2023-07-07 23:46:21 INFO  WebAutomation:16 - ************Testcase DeleteProfile is Started**************
+2023-07-07 23:46:37 INFO  WebAutomation:16 - ************Testcase DeleteProfile is Started**************
+2023-07-07 23:46:53 INFO  WebAutomation:16 - ************Testcase DeleteProfile is Started**************
