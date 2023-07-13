@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="webautomationtestsuite">
+
+    <test name="webautomationtestcases">
+
+        <listeners>
+            <listener class-name="com.associateArchitect.Cucumber.base.BaseDriver_Cucumber" />
+        </listeners>
+        
+               <classes>
+                    <class name="com.associateArchitect.testRunner.testRunner"/>
+                </classes>
+
+    </test> <!-- Test -->
+
+</suite> <!-- Suite -->

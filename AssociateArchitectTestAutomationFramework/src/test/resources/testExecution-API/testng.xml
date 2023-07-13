@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="restassuredtestsuite">
+
+	<test thread-count="5" name="restassuredtestcases">
+	<listeners>
+	<listener class-name="com.associateArchitect.Utilities.CommonFunctions" />
+	</listeners>
+
+		<classes>
+
+			<class name="com.associateArchitectAPI.testcases.Get_All_Employees" />
+			<class
+				name="com.associateArchitectAPI.testcases.Get_SingleEmployeeDetails" />
+			<class
+				name="com.associateArchitectAPI.testcases.Post_NewRecord_intoDatabase" />
+			<class
+				name="com.associateArchitectAPI.testcases.Put_Update_EmployeeDetails" />
+
+
+		</classes>
+
+
+	</test> <!--Test-->
+
+</suite> <!--Suite-->

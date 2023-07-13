@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/test-classes" path="src/test/resources">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/BSA/Downloads/extentreports-cucumber6-adapter-2.9.0.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="C:/Users/BSA/Downloads/jar_files(2)/ci-environment-9.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/BSA/Downloads/jar_files(2)/cucumber-gherkin-messages-7.12.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/BSA/Downloads/jar_files(2)/docstring-7.12.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/BSA/Downloads/jar_files(2)/tag-expressions-5.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/BSA/Downloads/jar_files(2)/apiguardian-api-1.1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/BSA/Downloads/jar_files(2)/cucumber-gherkin-7.12.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/BSA/Downloads/jar_files(2)/cucumber-java-7.12.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/BSA/Downloads/jar_files(2)/cucumber-plugin-7.12.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/BSA/Downloads/jar_files(2)/messages-22.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/BSA/Downloads/jar_files(2)/cucumber-core-7.12.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/BSA/Downloads/jar_files(2)/cucumber-expressions-16.1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/BSA/Downloads/jar_files(2)/datatable-7.12.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/BSA/Downloads/jar_files(2)/gherkin-26.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/BSA/Downloads/jar_files(2)/html-formatter-20.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/BSA/Downloads/jar_files(2)/junit-xml-formatter-0.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/BSA/.p2/pool/plugins/org.testng_7.4.0.r202105021533.jar" sourcepath="C:/Users/BSA/.p2/pool/plugins/org.testng.source_7.4.0.r202105021533.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

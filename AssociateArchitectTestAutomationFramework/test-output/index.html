@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-webautomationtestsuite" class="navigator-link">
+              <span class="suite-name border-failed">webautomationtestsuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-webautomationtestsuite" class="navigator-link ">
+                    <span>D:\Vinay\Backup-Framework\Jul-09\AAAutomationFramework\src\test\resources\testexecution\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-webautomationtestsuite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-webautomationtestsuite" class="navigator-link ">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-webautomationtestsuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-webautomationtestsuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-webautomationtestsuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-webautomationtestsuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">5 methods, 1 failed,  2 skipped,  2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-webautomationtestsuite" class="hide-methods failed suite-webautomationtestsuite"> (hide)</a> <!-- hide-methods failed suite-webautomationtestsuite -->
+                      <a href="#" panel-name="suite-webautomationtestsuite" class="show-methods failed suite-webautomationtestsuite"> (show)</a> <!-- show-methods failed suite-webautomationtestsuite -->
+                    </span>
+                    <div class="method-list-content failed suite-webautomationtestsuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-webautomationtestsuite" title="com.associateArchitect.testRunner.testRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Make a multiwayTrip flight reservation&quot;, &quot;Flight Booking for MultiwayTrip&quot;)">runScenario("Make a multiwayTrip flight reservation", "Flight Booking for MultiwayTrip")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-webautomationtestsuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-webautomationtestsuite" class="hide-methods skipped suite-webautomationtestsuite"> (hide)</a> <!-- hide-methods skipped suite-webautomationtestsuite -->
+                      <a href="#" panel-name="suite-webautomationtestsuite" class="show-methods skipped suite-webautomationtestsuite"> (show)</a> <!-- show-methods skipped suite-webautomationtestsuite -->
+                    </span>
+                    <div class="method-list-content skipped suite-webautomationtestsuite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-webautomationtestsuite" title="com.associateArchitect.testRunner.testRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Make a multiwayTrip flight reservation&quot;, &quot;Flight Booking for MultiwayTrip&quot;)">runScenario("Make a multiwayTrip flight reservation", "Flight Booking for MultiwayTrip")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-webautomationtestsuite" title="com.associateArchitect.testRunner.testRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Make a multiwayTrip flight reservation&quot;, &quot;Flight Booking for MultiwayTrip&quot;)">runScenario("Make a multiwayTrip flight reservation", "Flight Booking for MultiwayTrip")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-webautomationtestsuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-webautomationtestsuite" class="hide-methods passed suite-webautomationtestsuite"> (hide)</a> <!-- hide-methods passed suite-webautomationtestsuite -->
+                      <a href="#" panel-name="suite-webautomationtestsuite" class="show-methods passed suite-webautomationtestsuite"> (show)</a> <!-- show-methods passed suite-webautomationtestsuite -->
+                    </span>
+                    <div class="method-list-content passed suite-webautomationtestsuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-webautomationtestsuite" title="com.associateArchitect.testRunner.testRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Make a RoundTrip flight reservation&quot;, &quot;Flight Booking for RoundTrip&quot;)">runScenario("Make a RoundTrip flight reservation", "Flight Booking for RoundTrip")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-webautomationtestsuite" title="com.associateArchitect.testRunner.testRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Make a OnewayTrip flight reservation&quot;, &quot;Flight Booking for OnewayTrip&quot;)">runScenario("Make a OnewayTrip flight reservation", "Flight Booking for OnewayTrip")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-webautomationtestsuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-webautomationtestsuite" class="panel webautomationtestsuite">
+          <div class="suite-webautomationtestsuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.associateArchitect.testRunner.testRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Make a multiwayTrip flight reservation&quot;, &quot;Flight Booking for MultiwayTrip&quot;)">
+                  </a> <!-- runScenario("Make a multiwayTrip flight reservation", "Flight Booking for MultiwayTrip") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Make a multiwayTrip flight reservation", "Flight Booking for MultiwayTrip")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, findElement {using=xpath, value=//span[@class=&apos;lbl_input appendBottom5&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.2, moz:accessibilityChecks: false, moz:buildID: 20230710165010, moz:debuggerAddress: 127.0.0.1:17572, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 10352, moz:profile: C:\Users\BSA\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:17572/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:154)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.associateArchitect.Pages.makemytripHomepage.clickTravellers(makemytripHomepage.java:81)
+	at com.associateArchitect.StepDefinitions.multiTripReservation.selectrandomTravellers(multiTripReservation.java:124)
+	at ✽.Select the random Travellers for the multiwaytrip(file:///D:/Vinay/Backup-Framework/Jul-09/AAAutomationFramework/./src/test/resources/featureFiles_Cucumber/multiTrip.feature:11)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-webautomationtestsuite-class-failed -->
+          <div class="suite-webautomationtestsuite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.associateArchitect.testRunner.testRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Make a multiwayTrip flight reservation&quot;, &quot;Flight Booking for MultiwayTrip&quot;)">
+                  </a> <!-- runScenario("Make a multiwayTrip flight reservation", "Flight Booking for MultiwayTrip") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Make a multiwayTrip flight reservation", "Flight Booking for MultiwayTrip")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, findElement {using=xpath, value=//span[@class=&apos;lbl_input appendBottom5&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.2, moz:accessibilityChecks: false, moz:buildID: 20230710165010, moz:debuggerAddress: 127.0.0.1:17834, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13196, moz:profile: C:\Users\BSA\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:17834/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:154)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.associateArchitect.Pages.makemytripHomepage.clickTravellers(makemytripHomepage.java:81)
+	at com.associateArchitect.StepDefinitions.multiTripReservation.selectrandomTravellers(multiTripReservation.java:124)
+	at ✽.Select the random Travellers for the multiwaytrip(file:///D:/Vinay/Backup-Framework/Jul-09/AAAutomationFramework/./src/test/resources/featureFiles_Cucumber/multiTrip.feature:11)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Make a multiwayTrip flight reservation&quot;, &quot;Flight Booking for MultiwayTrip&quot;)">
+                  </a> <!-- runScenario("Make a multiwayTrip flight reservation", "Flight Booking for MultiwayTrip") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Make a multiwayTrip flight reservation", "Flight Booking for MultiwayTrip")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, findElement {using=xpath, value=//span[@class=&apos;lbl_input appendBottom5&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.2, moz:accessibilityChecks: false, moz:buildID: 20230710165010, moz:debuggerAddress: 127.0.0.1:42548, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 11916, moz:profile: C:\Users\BSA\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:42548/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:154)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.associateArchitect.Pages.makemytripHomepage.clickTravellers(makemytripHomepage.java:81)
+	at com.associateArchitect.StepDefinitions.multiTripReservation.selectrandomTravellers(multiTripReservation.java:124)
+	at ✽.Select the random Travellers for the multiwaytrip(file:///D:/Vinay/Backup-Framework/Jul-09/AAAutomationFramework/./src/test/resources/featureFiles_Cucumber/multiTrip.feature:11)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-webautomationtestsuite-class-skipped -->
+          <div class="suite-webautomationtestsuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.associateArchitect.testRunner.testRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Make a RoundTrip flight reservation&quot;, &quot;Flight Booking for RoundTrip&quot;)">
+                  </a> <!-- runScenario("Make a RoundTrip flight reservation", "Flight Booking for RoundTrip") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Make a RoundTrip flight reservation", "Flight Booking for RoundTrip")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Make a OnewayTrip flight reservation&quot;, &quot;Flight Booking for OnewayTrip&quot;)">
+                  </a> <!-- runScenario("Make a OnewayTrip flight reservation", "Flight Booking for OnewayTrip") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Make a OnewayTrip flight reservation", "Flight Booking for OnewayTrip")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-webautomationtestsuite-class-passed -->
+        </div> <!-- panel webautomationtestsuite -->
+        <div panel-name="test-xml-webautomationtestsuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\Vinay\Backup-Framework\Jul-09\AAAutomationFramework\src\test\resources\testexecution\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;webautomationtestsuite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.associateArchitect.Cucumber.base.BaseDriver_Cucumber&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;webautomationtestcases&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.associateArchitect.testRunner.testRunner&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- webautomationtestcases --&gt;
+&lt;/suite&gt; &lt;!-- webautomationtestsuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-webautomationtestsuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for webautomationtestsuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">webautomationtestcases (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-webautomationtestsuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for webautomationtestsuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">runScenario</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-webautomationtestsuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for webautomationtestsuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_webautomationtestsuite');
+function tableData_webautomationtestsuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(5);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'runScenario')
+data.setCell(0, 2, 'com.associateArchitect.testRunner.testRunner')
+data.setCell(0, 3, 62668);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'com.associateArchitect.testRunner.testRunner')
+data.setCell(1, 3, 45362);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'com.associateArchitect.testRunner.testRunner')
+data.setCell(2, 3, 42978);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'com.associateArchitect.testRunner.testRunner')
+data.setCell(3, 3, 24031);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'com.associateArchitect.testRunner.testRunner')
+data.setCell(4, 3, 23090);
+window.suiteTableData['webautomationtestsuite']= { tableData: data, tableDiv: 'times-div-webautomationtestsuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <div id="times-div-webautomationtestsuite">
+              </div> <!-- times-div-webautomationtestsuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-webautomationtestsuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for webautomationtestsuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-webautomationtestsuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-webautomationtestsuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.associateArchitect.testRunner.testRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@74badf19)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Make a multiwayTrip flight reservation", "Flight Booking for MultiwayTrip")</span>
+                <span class="method-start">677 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Make a multiwayTrip flight reservation", "Flight Booking for MultiwayTrip")</span>
+                <span class="method-start">63352 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Make a multiwayTrip flight reservation", "Flight Booking for MultiwayTrip")</span>
+                <span class="method-start">86442 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Make a OnewayTrip flight reservation", "Flight Booking for OnewayTrip")</span>
+                <span class="method-start">110495 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Make a RoundTrip flight reservation", "Flight Booking for RoundTrip")</span>
+                <span class="method-start">153474 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">198837 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
