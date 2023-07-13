@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>webautomationtestcases</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/1/2</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/1/3</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Jul 09 03:34:41 IST 2023</td>
+<td>Started on:</td><td>Wed Jul 12 11:49:15 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>170 seconds (170565 ms)</td>
+<tr><td>Total time:</td><td>307 seconds (307424 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,43 +76,55 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.associateArchitect.testRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: com.associateArchitect.testRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Make a multiwayTrip flight reservation", "Flight Booking for MultiwayTrip"</td>
-<td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
 Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.18&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, findElement {using=xpath, value=//span[@class=&apos;lbl_input appendBottom5&apos;]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.1, moz:accessibilityChecks: false, moz:buildID: 20230706202047, moz:debuggerAddress: 127.0.0.1:5724, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 33072, moz:profile: C:\Users\BSA\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:5724/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:154)
+Command: [149d8887-7ef0-41e4-bb3e-7f7f7fe8c2e5, findElement {using=class name, value=selected}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.2, moz:accessibilityChecks: false, moz:buildID: 20230710165010, moz:debuggerAddress: 127.0.0.1:29312, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 15504, moz:profile: C:\Users\BSA\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:29312/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 149d8887-7ef0-41e4-bb3e-7f7f7fe8c2e5
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
 	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at com.associateArchitect.Pages.makemytripHomepage.clickTravellers(makemytripHomepage.java:81)
-	at com.associateArchitect.StepDefinitions.multiTripReservation.selectrandomTravellers(multiTripReservation.java:124)
-	at ✽.Select the random Travellers for the multiwaytrip(file:///C:/Users/BSA/git/Associate-Architect/AAAutomationFramework/./src/test/resources/featureFiles_Cucumber/multiTrip.feature:11)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1270620605", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1270620605'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+	at com.associateArchitect.Pages.makemytripHomepage.isroundtripRadiobuttonSelected(makemytripHomepage.java:107)
+	at com.associateArchitect.StepDefinitions.multiTripReservation.takeScreenshot(multiTripReservation.java:68)
+	at ✽.Take a Screenshot when a multiwaytrip radio button is selected(file:///C:/Users/BSA/git/Associate-Architect/AAAutomationFramework/./src/test/resources/featureFiles/multiTrip.feature:7)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace636364044", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace636364044'><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
 Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.18&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, findElement {using=xpath, value=//span[@class=&apos;lbl_input appendBottom5&apos;]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.1, moz:accessibilityChecks: false, moz:buildID: 20230706202047, moz:debuggerAddress: 127.0.0.1:5724, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 33072, moz:profile: C:\Users\BSA\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:5724/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:154)
+Command: [149d8887-7ef0-41e4-bb3e-7f7f7fe8c2e5, findElement {using=class name, value=selected}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.2, moz:accessibilityChecks: false, moz:buildID: 20230710165010, moz:debuggerAddress: 127.0.0.1:29312, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 15504, moz:profile: C:\Users\BSA\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:29312/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 149d8887-7ef0-41e4-bb3e-7f7f7fe8c2e5
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
 	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at com.associateArchitect.Pages.makemytripHomepage.clickTravellers(makemytripHomepage.java:81)
-	at com.associateArchitect.StepDefinitions.multiTripReservation.selectrandomTravellers(multiTripReservation.java:124)
-	at ✽.Select the random Travellers for the multiwaytrip(file:///C:/Users/BSA/git/Associate-Architect/AAAutomationFramework/./src/test/resources/featureFiles_Cucumber/multiTrip.feature:11)
+	at com.associateArchitect.Pages.makemytripHomepage.isroundtripRadiobuttonSelected(makemytripHomepage.java:107)
+	at com.associateArchitect.StepDefinitions.multiTripReservation.takeScreenshot(multiTripReservation.java:68)
+	at ✽.Take a Screenshot when a multiwaytrip radio button is selected(file:///C:/Users/BSA/git/Associate-Architect/AAAutomationFramework/./src/test/resources/featureFiles/multiTrip.feature:7)
 </pre></div></td>
-<td>21</td>
+<td>102</td>
 <td>com.associateArchitect.testRunner.testRunner@57a78e3</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -125,12 +137,12 @@ Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 1
 <tr>
 <td title='com.associateArchitect.testRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: com.associateArchitect.testRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Make a RoundTrip flight reservation", "Flight Booking for RoundTrip"</td>
 <td></td>
-<td>39</td>
+<td>212</td>
 <td>com.associateArchitect.testRunner.testRunner@57a78e3</td></tr>
 <tr>
 <td title='com.associateArchitect.testRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: com.associateArchitect.testRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Make a OnewayTrip flight reservation", "Flight Booking for OnewayTrip"</td>
 <td></td>
-<td>46</td>
+<td>93</td>
 <td>com.associateArchitect.testRunner.testRunner@57a78e3</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
@@ -142,83 +154,81 @@ Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 1
 </tr>
 <tr>
 <td title='com.associateArchitect.testRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: com.associateArchitect.testRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Make a multiwayTrip flight reservation", "Flight Booking for MultiwayTrip"</td>
-<td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: Element &lt;input id=&quot;fromCity&quot; class=&quot;fsw_inputField lineHeight36 latoBlack font30&quot; type=&quot;text&quot;&gt; is not clickable at point (338,282) because another element &lt;input class=&quot;react-autosuggest__input react-autosuggest__input--open react-autosuggest__input--focused&quot; type=&quot;text&quot;&gt; obscures it
 Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.18&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, findElement {using=xpath, value=//span[@class=&apos;lbl_input appendBottom5&apos;]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.1, moz:accessibilityChecks: false, moz:buildID: 20230706202047, moz:debuggerAddress: 127.0.0.1:26775, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 29568, moz:profile: C:\Users\BSA\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:26775/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:154)
+Command: [ecdf5be0-3251-4971-84d6-24352c4fba37, clickElement {id=a80b2a74-30f3-490e-afc3-7dad099c7d56}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.2, moz:accessibilityChecks: false, moz:buildID: 20230710165010, moz:debuggerAddress: 127.0.0.1:40640, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 30528, moz:profile: C:\Users\BSA\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:40640/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on WINDOWS (ecdf5be0-3251-4971-84d6-24352c4fba37)] -&gt; id: fromCity]
+Session ID: ecdf5be0-3251-4971-84d6-24352c4fba37
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at com.associateArchitect.Pages.makemytripHomepage.clickTravellers(makemytripHomepage.java:81)
-	at com.associateArchitect.StepDefinitions.multiTripReservation.selectrandomTravellers(multiTripReservation.java:124)
-	at ✽.Select the random Travellers for the multiwaytrip(file:///C:/Users/BSA/git/Associate-Architect/AAAutomationFramework/./src/test/resources/featureFiles_Cucumber/multiTrip.feature:11)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2099826125", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2099826125'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at com.associateArchitect.Pages.makemytripHomepage.fromSelectionClick(makemytripHomepage.java:114)
+	at com.associateArchitect.StepDefinitions.multiTripReservation.selectDestination(multiTripReservation.java:77)
+	at ✽.Randomly select a Destination for the multiwaytrip(file:///C:/Users/BSA/git/Associate-Architect/AAAutomationFramework/./src/test/resources/featureFiles/multiTrip.feature:8)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1421213886", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1421213886'><pre>org.openqa.selenium.ElementClickInterceptedException: Element &lt;input id=&quot;fromCity&quot; class=&quot;fsw_inputField lineHeight36 latoBlack font30&quot; type=&quot;text&quot;&gt; is not clickable at point (338,282) because another element &lt;input class=&quot;react-autosuggest__input react-autosuggest__input--open react-autosuggest__input--focused&quot; type=&quot;text&quot;&gt; obscures it
 Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.18&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, findElement {using=xpath, value=//span[@class=&apos;lbl_input appendBottom5&apos;]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.1, moz:accessibilityChecks: false, moz:buildID: 20230706202047, moz:debuggerAddress: 127.0.0.1:26775, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 29568, moz:profile: C:\Users\BSA\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:26775/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:154)
+Command: [ecdf5be0-3251-4971-84d6-24352c4fba37, clickElement {id=a80b2a74-30f3-490e-afc3-7dad099c7d56}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.2, moz:accessibilityChecks: false, moz:buildID: 20230710165010, moz:debuggerAddress: 127.0.0.1:40640, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 30528, moz:profile: C:\Users\BSA\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:40640/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on WINDOWS (ecdf5be0-3251-4971-84d6-24352c4fba37)] -&gt; id: fromCity]
+Session ID: ecdf5be0-3251-4971-84d6-24352c4fba37
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at com.associateArchitect.Pages.makemytripHomepage.clickTravellers(makemytripHomepage.java:81)
-	at com.associateArchitect.StepDefinitions.multiTripReservation.selectrandomTravellers(multiTripReservation.java:124)
-	at ✽.Select the random Travellers for the multiwaytrip(file:///C:/Users/BSA/git/Associate-Architect/AAAutomationFramework/./src/test/resources/featureFiles_Cucumber/multiTrip.feature:11)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at com.associateArchitect.Pages.makemytripHomepage.fromSelectionClick(makemytripHomepage.java:114)
+	at com.associateArchitect.StepDefinitions.multiTripReservation.selectDestination(multiTripReservation.java:77)
+	at ✽.Randomly select a Destination for the multiwaytrip(file:///C:/Users/BSA/git/Associate-Architect/AAAutomationFramework/./src/test/resources/featureFiles/multiTrip.feature:8)
 </pre></div></td>
-<td>21</td>
+<td>109</td>
 <td>com.associateArchitect.testRunner.testRunner@57a78e3</td></tr>
 <tr>
-<td title='com.associateArchitect.testRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: com.associateArchitect.testRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Make a multiwayTrip flight reservation", "Flight Booking for MultiwayTrip"</td>
-<td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.18&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, findElement {using=xpath, value=//span[@class=&apos;lbl_input appendBottom5&apos;]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.1, moz:accessibilityChecks: false, moz:buildID: 20230706202047, moz:debuggerAddress: 127.0.0.1:9858, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12184, moz:profile: C:\Users\BSA\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:9858/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:154)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at com.associateArchitect.Pages.makemytripHomepage.clickTravellers(makemytripHomepage.java:81)
-	at com.associateArchitect.StepDefinitions.multiTripReservation.selectrandomTravellers(multiTripReservation.java:124)
-	at ✽.Select the random Travellers for the multiwaytrip(file:///C:/Users/BSA/git/Associate-Architect/AAAutomationFramework/./src/test/resources/featureFiles_Cucumber/multiTrip.feature:11)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1350011870", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1350011870'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.18&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, findElement {using=xpath, value=//span[@class=&apos;lbl_input appendBottom5&apos;]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.1, moz:accessibilityChecks: false, moz:buildID: 20230706202047, moz:debuggerAddress: 127.0.0.1:9858, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12184, moz:profile: C:\Users\BSA\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:9858/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:154)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at com.associateArchitect.Pages.makemytripHomepage.clickTravellers(makemytripHomepage.java:81)
-	at com.associateArchitect.StepDefinitions.multiTripReservation.selectrandomTravellers(multiTripReservation.java:124)
-	at ✽.Select the random Travellers for the multiwaytrip(file:///C:/Users/BSA/git/Associate-Architect/AAAutomationFramework/./src/test/resources/featureFiles_Cucumber/multiTrip.feature:11)
+<td title='com.associateArchitect.testRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: com.associateArchitect.testRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Make a OnewayTrip flight reservation", "Flight Booking for OnewayTrip"</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.associateArchitect.base.BaseDriver.testStepHandle(BaseDriver.java:142)
+	at com.associateArchitect.StepDefinitions.oneTripReservation.selectDestination(oneTripReservation.java:107)
+	at ✽.Randomly select a Destination for the onewaytrip(file:///C:/Users/BSA/git/Associate-Architect/AAAutomationFramework/./src/test/resources/featureFiles/onewayTrip.feature:8)
+</pre></div><a href='#' onClick='toggleBox("stack-trace80990030", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace80990030'><pre>java.lang.NullPointerException
+	at com.associateArchitect.base.BaseDriver.testStepHandle(BaseDriver.java:142)
+	at com.associateArchitect.StepDefinitions.oneTripReservation.selectDestination(oneTripReservation.java:107)
+	at ✽.Randomly select a Destination for the onewaytrip(file:///C:/Users/BSA/git/Associate-Architect/AAAutomationFramework/./src/test/resources/featureFiles/onewayTrip.feature:8)
 </pre></div></td>
-<td>38</td>
+<td>101</td>
+<td>com.associateArchitect.testRunner.testRunner@57a78e3</td></tr>
+<tr>
+<td title='com.associateArchitect.testRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: com.associateArchitect.testRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Make a OnewayTrip flight reservation", "Flight Booking for OnewayTrip"</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.associateArchitect.base.BaseDriver.testStepHandle(BaseDriver.java:142)
+	at com.associateArchitect.StepDefinitions.oneTripReservation.takeScreenshot(oneTripReservation.java:91)
+	at ✽.Take a Screenshot when a onewaytrip radio button is selected(file:///C:/Users/BSA/git/Associate-Architect/AAAutomationFramework/./src/test/resources/featureFiles/onewayTrip.feature:7)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1166527082", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1166527082'><pre>java.lang.NullPointerException
+	at com.associateArchitect.base.BaseDriver.testStepHandle(BaseDriver.java:142)
+	at com.associateArchitect.StepDefinitions.oneTripReservation.takeScreenshot(oneTripReservation.java:91)
+	at ✽.Take a Screenshot when a onewaytrip radio button is selected(file:///C:/Users/BSA/git/Associate-Architect/AAAutomationFramework/./src/test/resources/featureFiles/onewayTrip.feature:7)
+</pre></div></td>
+<td>110</td>
 <td>com.associateArchitect.testRunner.testRunner@57a78e3</td></tr>
 </table><p>
 </body>

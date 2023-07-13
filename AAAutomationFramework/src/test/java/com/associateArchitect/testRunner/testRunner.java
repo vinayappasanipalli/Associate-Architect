@@ -21,21 +21,24 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.DataProvider;
 
 import com.associateArchitect.Utilities.CommonFunctions.FrameworkConfig;
 
 import io.cucumber.java.After;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
+import io.cucumber.testng.TestNGCucumberRunner;
 import io.github.bonigarcia.wdm.WebDriverManager;
 //@RunWith(Cucumber.class) 
 @CucumberOptions(
 		
 		tags="@roundtripTC1 or @onewaytripTC2 or @multitripTC3",
-		features="./src/test/resources/featureFiles_Cucumber",
+		//tags="@parallelExecution",
+		features="./src/test/resources/featureFiles",
 		glue={"com.associateArchitect.StepDefinitions"},
 		plugin = {"summary","pretty",
-				"json:src/test/resources/reports.html",
+				//"json:src/test/resources/reports.html",
 		//"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
 		//"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
 				},	
@@ -43,4 +46,14 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 		)
 
 public class testRunner extends AbstractTestNGCucumberTests{
+	//private TestNGCucumberRunner testNGCucumberRunner;
+	
+//@Override
+//@DataProvider(parallel=true)
+//public Object[][] scenarios(){
+//return super.scenarios();
+//	
+//}
+	
 }
+	

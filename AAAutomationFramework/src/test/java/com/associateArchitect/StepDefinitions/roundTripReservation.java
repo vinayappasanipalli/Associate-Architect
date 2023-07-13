@@ -1,31 +1,17 @@
 package com.associateArchitect.StepDefinitions;
 
-import java.io.FileReader;
-import java.io.IOException;
 import java.time.Duration;
 
-import org.aeonbits.owner.ConfigFactory;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-
-import com.associateArchitect.Cucumber.base.BaseDriver_Cucumber;
 import com.associateArchitect.Pages.makemytripHomepage;
 import com.associateArchitect.Utilities.CommonFunctions;
-import com.associateArchitect.Utilities.CommonFunctions.FrameworkConfig;
+import com.associateArchitect.base.BaseDriver;
 import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.gherkin.model.IGherkinFormatterModel;
-
-import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.github.bonigarcia.wdm.WebDriverManager;
-
 import com.aventstack.extentreports.GherkinKeyword;
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.gherkin.model.Feature;
 import com.aventstack.extentreports.gherkin.model.Scenario;
 
@@ -36,7 +22,7 @@ import com.aventstack.extentreports.gherkin.model.Scenario;
 *               Make my-trip web-site. It interacts with page objects, performs actions, 
 *               handles assertions, captures screenshots, and utilizes reporting for test execution.       
  ******************************************************************************************************/
-public class roundTripReservation extends BaseDriver_Cucumber {
+public class roundTripReservation extends BaseDriver {
 	makemytripHomepage mTH;
 
 	@Given("User Login to MakemyTrip")
@@ -80,9 +66,11 @@ public class roundTripReservation extends BaseDriver_Cucumber {
 		try{
 			boolean actualValueRound = mTH.isroundtripRadiobuttonSelected();
 			if (actualValueRound) {
-				CommonFunctions.capturescreenshot(driver);
+				String screenshot = CommonFunctions.capturescreenshot(driver);
+				//CommonFunctions.capturescreenshot(driver);
 				logInfo = test.createNode(new GherkinKeyword("Then"),"A Screenshot is taken when a Roundtrip radio button is selected");
-		}
+				logInfo= test.pass("Screenshot Captured",MediaEntityBuilder.createScreenCaptureFromPath(screenshot).build());
+			}
 		}
 			catch (AssertionError | Exception e) {
 				testStepHandle("FAIL", logInfo, e);

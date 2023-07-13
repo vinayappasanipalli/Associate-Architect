@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!--<suite name="webautomationtestsuite" parallel="tests" data-provider-thread-count="2">-->
+
 <suite name="webautomationtestsuite">
 
-    <test name="webautomationtestcases">
+	<test name="webautomationtestcases">
 
-        <listeners>
-            <listener class-name="com.associateArchitect.Cucumber.base.BaseDriver_Cucumber" />
-        </listeners>
-        
-               <classes>
-                    <class name="com.associateArchitect.testRunner.testRunner"/>
-                </classes>
 
-    </test> <!-- Test -->
+		<classes>
+			<class name="com.associateArchitect.testRunner.testRunner" />
+		</classes>
 
-</suite> <!-- Suite -->
+		<listeners>
+			<listener
+				class-name="com.associateArchitect.base.BaseDriver" />
+		</listeners>
+	</test> <!--
+	Test -->
+
+</suite> <!--
+Suite -->

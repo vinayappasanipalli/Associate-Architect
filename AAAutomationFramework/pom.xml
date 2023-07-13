@@ -30,6 +30,10 @@
 <!--							<extent.reporter.spark.out>	src/test/resources/report.html</extent.reporter.spark.out>-->
 						
 <!--					</systemPropertyVariables>-->
+<!--<threadCount>3</threadCount>-->
+<!--<perCoreThreadCount>false</perCoreThreadCount>-->
+<!--<parallel>class</parallel>-->
+<!--<useUnlimitedThreads>true</useUnlimitedThreads>-->
                 </configuration>
             </plugin>
         </plugins>

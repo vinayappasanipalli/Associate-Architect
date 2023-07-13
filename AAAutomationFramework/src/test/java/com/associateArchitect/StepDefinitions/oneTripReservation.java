@@ -11,10 +11,10 @@ import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-import com.associateArchitect.Cucumber.base.BaseDriver_Cucumber;
 import com.associateArchitect.Pages.makemytripHomepage;
 import com.associateArchitect.Utilities.CommonFunctions;
 import com.associateArchitect.Utilities.CommonFunctions.FrameworkConfig;
+import com.associateArchitect.base.BaseDriver;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.gherkin.model.IGherkinFormatterModel;
 
@@ -37,7 +37,7 @@ import com.aventstack.extentreports.gherkin.model.Scenario;
 *               handles assertions, captures screenshots, and utilizes reporting for test execution.       
  ******************************************************************************************************/
 
-public class oneTripReservation extends BaseDriver_Cucumber {
+public class oneTripReservation extends BaseDriver {
 	makemytripHomepage mTH;
 
 	@Given("User Login to MakemyTrip site for onewaytrip")

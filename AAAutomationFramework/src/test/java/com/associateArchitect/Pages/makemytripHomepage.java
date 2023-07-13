@@ -1,23 +1,16 @@
 package com.associateArchitect.Pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-
-import com.associateArchitect.Utilities.CommonFunctions;
-import com.associateArchitect.Web.base.BaseDriver;
-
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.time.Duration;
-import java.util.List;
-import java.util.Random;
 import java.time.LocalDate;
 import java.time.Month;
 import java.util.List;
-import org.openqa.selenium.support.ui.ExpectedCondition;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
+
+import com.associateArchitect.Utilities.CommonFunctions;
+import com.associateArchitect.base.BaseDriver;
 
 /*****************************************************************************************************
 *Class Name : makemytripHomepage

@@ -39,10 +39,8 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.ITestAnnotation;
-
-import com.associateArchitect.Cucumber.base.BaseDriver_Cucumber;
+import com.associateArchitect.base.BaseDriver;
 import com.associateArchitect.Utilities.CommonFunctions.FrameworkConfig;
-import com.associateArchitect.Web.base.BaseDriver;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
@@ -174,7 +172,7 @@ public class CommonFunctions implements IRetryAnalyzer, IAnnotationTransformer, 
 ******************************************************************************************************/		
 
 	private int retrycount = 0;
-	private static final int maxcount = 2;
+	private static final int maxcount = 1;
 
 	@Override
 	public boolean retry(ITestResult result) {

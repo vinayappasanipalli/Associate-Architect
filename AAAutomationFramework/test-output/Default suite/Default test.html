@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jul 06 04:23:28 IST 2023</td>
+<td>Started on:</td><td>Wed Jul 12 12:26:13 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (514 ms)</td>
+<tr><td>Total time:</td><td>69 seconds (69182 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,5 +67,55 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.associateArchitect.testRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: com.associateArchitect.testRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Make a OnewayTrip flight reservation", "Flight Booking for OnewayTrip"</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.associateArchitect.base.BaseDriver.testStepHandle(BaseDriver.java:142)
+	at com.associateArchitect.StepDefinitions.oneTripReservation.login(oneTripReservation.java:57)
+	at ✽.User Login to MakemyTrip site for onewaytrip(file:///C:/Users/BSA/git/Associate-Architect/AAAutomationFramework/./src/test/resources/featureFiles/onewayTrip.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2039264985", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2039264985'><pre>java.lang.NullPointerException
+	at com.associateArchitect.base.BaseDriver.testStepHandle(BaseDriver.java:142)
+	at com.associateArchitect.StepDefinitions.oneTripReservation.login(oneTripReservation.java:57)
+	at ✽.User Login to MakemyTrip site for onewaytrip(file:///C:/Users/BSA/git/Associate-Architect/AAAutomationFramework/./src/test/resources/featureFiles/onewayTrip.feature:5)
+</pre></div></td>
+<td>23</td>
+<td>com.associateArchitect.testRunner.testRunner@1caa0244</td></tr>
+<tr>
+<td title='com.associateArchitect.testRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: com.associateArchitect.testRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Make a RoundTrip flight reservation", "Flight Booking for RoundTrip"</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.associateArchitect.base.BaseDriver.testStepHandle(BaseDriver.java:142)
+	at com.associateArchitect.StepDefinitions.roundTripReservation.login(roundTripReservation.java:42)
+	at ✽.User Login to MakemyTrip(file:///C:/Users/BSA/git/Associate-Architect/AAAutomationFramework/./src/test/resources/featureFiles/roundTrip.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace897358809", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace897358809'><pre>java.lang.NullPointerException
+	at com.associateArchitect.base.BaseDriver.testStepHandle(BaseDriver.java:142)
+	at com.associateArchitect.StepDefinitions.roundTripReservation.login(roundTripReservation.java:42)
+	at ✽.User Login to MakemyTrip(file:///C:/Users/BSA/git/Associate-Architect/AAAutomationFramework/./src/test/resources/featureFiles/roundTrip.feature:5)
+</pre></div></td>
+<td>28</td>
+<td>com.associateArchitect.testRunner.testRunner@1caa0244</td></tr>
+<tr>
+<td title='com.associateArchitect.testRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: com.associateArchitect.testRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Make a multiwayTrip flight reservation", "Flight Booking for MultiwayTrip"</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.associateArchitect.base.BaseDriver.testStepHandle(BaseDriver.java:142)
+	at com.associateArchitect.StepDefinitions.multiTripReservation.login(multiTripReservation.java:45)
+	at ✽.User Login to MakemyTrip site for multiwaytrip(file:///C:/Users/BSA/git/Associate-Architect/AAAutomationFramework/./src/test/resources/featureFiles/multiTrip.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1951783627", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1951783627'><pre>java.lang.NullPointerException
+	at com.associateArchitect.base.BaseDriver.testStepHandle(BaseDriver.java:142)
+	at com.associateArchitect.StepDefinitions.multiTripReservation.login(multiTripReservation.java:45)
+	at ✽.User Login to MakemyTrip site for multiwaytrip(file:///C:/Users/BSA/git/Associate-Architect/AAAutomationFramework/./src/test/resources/featureFiles/multiTrip.feature:5)
+</pre></div></td>
+<td>16</td>
+<td>com.associateArchitect.testRunner.testRunner@1caa0244</td></tr>
+</table><p>
 </body>
 </html>

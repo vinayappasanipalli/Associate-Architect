@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="2" ignored="0" total="5" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-09T03:34:41 IST" name="webautomationtestsuite" finished-at="2023-07-09T03:37:32 IST" duration-ms="170565">
+  <suite started-at="2023-07-12T12:26:13 IST" name="Default suite" finished-at="2023-07-12T12:27:22 IST" duration-ms="69182">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.associateArchitect.testRunner.testRunner@57a78e3]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.associateArchitect.testRunner.testRunner@1caa0244]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-07-09T03:34:41 IST" name="webautomationtestcases" finished-at="2023-07-09T03:37:32 IST" duration-ms="170565">
+    <test started-at="2023-07-12T12:26:13 IST" name="Default test" finished-at="2023-07-12T12:27:22 IST" duration-ms="69182">
       <class name="com.associateArchitect.testRunner.testRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.associateArchitect.testRunner.testRunner@57a78e3]" started-at="2023-07-09T03:34:42 IST" name="setUpClass" finished-at="2023-07-09T03:34:42 IST" duration-ms="432" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.associateArchitect.testRunner.testRunner@1caa0244]" started-at="2023-07-12T12:26:13 IST" name="setUpClass" finished-at="2023-07-12T12:26:14 IST" duration-ms="461" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6bd2f039]]>
+                <![CDATA[org.testng.TestRunner@1d2fb82]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method retried="true" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.associateArchitect.testRunner.testRunner@57a78e3]" started-at="2023-07-09T03:34:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-07-09T03:35:21 IST" duration-ms="38992" status="SKIP">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.associateArchitect.testRunner.testRunner@1caa0244]" started-at="2023-07-12T12:26:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-07-12T12:26:30 IST" duration-ms="16394" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -34,132 +34,19 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, findElement {using=xpath, value=//span[@class='lbl_input appendBottom5']}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.1, moz:accessibilityChecks: false, moz:buildID: 20230706202047, moz:debuggerAddress: 127.0.0.1:9858, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12184, moz:profile: C:\Users\BSA\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:9858/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}]]>
-            </message>
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, findElement {using=xpath, value=//span[@class='lbl_input appendBottom5']}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.1, moz:accessibilityChecks: false, moz:buildID: 20230706202047, moz:debuggerAddress: 127.0.0.1:9858, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12184, moz:profile: C:\Users\BSA\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:9858/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:154)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at com.associateArchitect.Pages.makemytripHomepage.clickTravellers(makemytripHomepage.java:81)
-at com.associateArchitect.StepDefinitions.multiTripReservation.selectrandomTravellers(multiTripReservation.java:124)
-at ✽.Select the random Travellers for the multiwaytrip(file:///C:/Users/BSA/git/Associate-Architect/AAAutomationFramework/./src/test/resources/featureFiles_Cucumber/multiTrip.feature:11)
+              <![CDATA[java.lang.NullPointerException
+at com.associateArchitect.base.BaseDriver.testStepHandle(BaseDriver.java:142)
+at com.associateArchitect.StepDefinitions.multiTripReservation.login(multiTripReservation.java:45)
+at ✽.User Login to MakemyTrip site for multiwaytrip(file:///C:/Users/BSA/git/Associate-Architect/AAAutomationFramework/./src/test/resources/featureFiles/multiTrip.feature:5)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method retried="true" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.associateArchitect.testRunner.testRunner@57a78e3]" started-at="2023-07-09T03:35:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-07-09T03:35:43 IST" duration-ms="21565" status="SKIP">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Make a multiwayTrip flight reservation"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Flight Booking for MultiwayTrip"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, findElement {using=xpath, value=//span[@class='lbl_input appendBottom5']}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.1, moz:accessibilityChecks: false, moz:buildID: 20230706202047, moz:debuggerAddress: 127.0.0.1:26775, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 29568, moz:profile: C:\Users\BSA\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:26775/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, findElement {using=xpath, value=//span[@class='lbl_input appendBottom5']}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.1, moz:accessibilityChecks: false, moz:buildID: 20230706202047, moz:debuggerAddress: 127.0.0.1:26775, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 29568, moz:profile: C:\Users\BSA\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:26775/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:154)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at com.associateArchitect.Pages.makemytripHomepage.clickTravellers(makemytripHomepage.java:81)
-at com.associateArchitect.StepDefinitions.multiTripReservation.selectrandomTravellers(multiTripReservation.java:124)
-at ✽.Select the random Travellers for the multiwaytrip(file:///C:/Users/BSA/git/Associate-Architect/AAAutomationFramework/./src/test/resources/featureFiles_Cucumber/multiTrip.feature:11)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.associateArchitect.testRunner.testRunner@57a78e3]" started-at="2023-07-09T03:35:43 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-07-09T03:36:04 IST" duration-ms="21715" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Make a multiwayTrip flight reservation"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Flight Booking for MultiwayTrip"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, findElement {using=xpath, value=//span[@class='lbl_input appendBottom5']}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.1, moz:accessibilityChecks: false, moz:buildID: 20230706202047, moz:debuggerAddress: 127.0.0.1:5724, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 33072, moz:profile: C:\Users\BSA\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:5724/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, findElement {using=xpath, value=//span[@class='lbl_input appendBottom5']}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.1, moz:accessibilityChecks: false, moz:buildID: 20230706202047, moz:debuggerAddress: 127.0.0.1:5724, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 33072, moz:profile: C:\Users\BSA\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:5724/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:154)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at com.associateArchitect.Pages.makemytripHomepage.clickTravellers(makemytripHomepage.java:81)
-at com.associateArchitect.StepDefinitions.multiTripReservation.selectrandomTravellers(multiTripReservation.java:124)
-at ✽.Select the random Travellers for the multiwaytrip(file:///C:/Users/BSA/git/Associate-Architect/AAAutomationFramework/./src/test/resources/featureFiles_Cucumber/multiTrip.feature:11)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.associateArchitect.testRunner.testRunner@57a78e3]" started-at="2023-07-09T03:36:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-07-09T03:36:51 IST" duration-ms="46496" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.associateArchitect.testRunner.testRunner@1caa0244]" started-at="2023-07-12T12:26:30 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-07-12T12:26:53 IST" duration-ms="23332" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -172,10 +59,19 @@ at ✽.Select the random Travellers for the multiwaytrip(file:///C:/Users/BSA/gi
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.associateArchitect.base.BaseDriver.testStepHandle(BaseDriver.java:142)
+at com.associateArchitect.StepDefinitions.oneTripReservation.login(oneTripReservation.java:57)
+at ✽.User Login to MakemyTrip site for onewaytrip(file:///C:/Users/BSA/git/Associate-Architect/AAAutomationFramework/./src/test/resources/featureFiles/onewayTrip.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.associateArchitect.testRunner.testRunner@57a78e3]" started-at="2023-07-09T03:36:51 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-07-09T03:37:31 IST" duration-ms="39692" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.associateArchitect.testRunner.testRunner@1caa0244]" started-at="2023-07-12T12:26:53 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-07-12T12:27:22 IST" duration-ms="28894" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -188,14 +84,23 @@ at ✽.Select the random Travellers for the multiwaytrip(file:///C:/Users/BSA/gi
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.associateArchitect.base.BaseDriver.testStepHandle(BaseDriver.java:142)
+at com.associateArchitect.StepDefinitions.roundTripReservation.login(roundTripReservation.java:42)
+at ✽.User Login to MakemyTrip(file:///C:/Users/BSA/git/Associate-Architect/AAAutomationFramework/./src/test/resources/featureFiles/roundTrip.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.associateArchitect.testRunner.testRunner@57a78e3]" started-at="2023-07-09T03:37:31 IST" name="tearDownClass" finished-at="2023-07-09T03:37:32 IST" duration-ms="1263" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.associateArchitect.testRunner.testRunner@1caa0244]" started-at="2023-07-12T12:27:22 IST" name="tearDownClass" finished-at="2023-07-12T12:27:22 IST" duration-ms="50" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- com.associateArchitect.testRunner.testRunner -->
-    </test> <!-- webautomationtestcases -->
-  </suite> <!-- webautomationtestsuite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
