@@ -174,7 +174,7 @@ public class CommonFunctions implements IRetryAnalyzer, IAnnotationTransformer, 
 ******************************************************************************************************/		
 
 	private int retrycount = 0;
-	private static final int maxcount = 2;
+	private static final int maxcount = 1;
 
 	@Override
 	public boolean retry(ITestResult result) {
